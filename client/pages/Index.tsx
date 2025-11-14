@@ -168,7 +168,8 @@ export default function Index() {
                 How It Works
               </h2>
               <p className="text-base sm:text-lg text-gray-600 font-medium leading-relaxed">
-                Three simple steps to transform your designs into production code
+                Three simple steps to transform your designs into production
+                code
               </p>
             </div>
 
@@ -188,7 +189,7 @@ export default function Index() {
                     <g clipPath="url(#clip0_36_62)">
                       <mask
                         id="mask0_36_62"
-                        style={{ maskType: 'luminance' }}
+                        style={{ maskType: "luminance" }}
                         maskUnits="userSpaceOnUse"
                         x="0"
                         y="0"
@@ -218,7 +219,8 @@ export default function Index() {
                     Design in Figma
                   </h3>
                   <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                    Create your landing page design using your existing design system and components in Figma.
+                    Create your landing page design using your existing design
+                    system and components in Figma.
                   </p>
                 </div>
               </div>
@@ -247,7 +249,8 @@ export default function Index() {
                     Import into Fusion
                   </h3>
                   <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                    Upload your Figma file and let our AI analyze your design patterns and component structure.
+                    Upload your Figma file and let our AI analyze your design
+                    patterns and component structure.
                   </p>
                 </div>
               </div>
@@ -274,7 +277,8 @@ export default function Index() {
                     Generate Pages Instantly
                   </h3>
                   <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                    Get production-ready React code that matches your design system perfectly, ready to deploy.
+                    Get production-ready React code that matches your design
+                    system perfectly, ready to deploy.
                   </p>
                 </div>
               </div>
