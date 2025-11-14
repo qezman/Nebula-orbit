@@ -176,7 +176,11 @@ export default function Index() {
             {/* Steps Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 w-full">
               {/* Step 1: Design in Figma */}
-              <div className="flex flex-col items-center gap-6 p-6 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300">
+              <div className="relative flex flex-col items-center gap-6 p-6 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300">
+                {/* Number Badge */}
+                <div className="absolute top-6 left-6 w-7 h-7 bg-white rounded-full shadow-lg flex items-center justify-center">
+                  <span className="text-sm font-bold text-indigo-700">1</span>
+                </div>
                 <div className="w-16 h-16 rounded-lg bg-indigo-500 flex items-center justify-center flex-shrink-0">
                   <svg
                     width="31"
@@ -226,7 +230,11 @@ export default function Index() {
               </div>
 
               {/* Step 2: Import into Fusion */}
-              <div className="flex flex-col items-center gap-6 p-6 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 md:delay-100">
+              <div className="relative flex flex-col items-center gap-6 p-6 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 md:delay-100">
+                {/* Number Badge */}
+                <div className="absolute top-6 left-6 w-7 h-7 bg-white rounded-full shadow-lg flex items-center justify-center">
+                  <span className="text-sm font-bold text-indigo-700">2</span>
+                </div>
                 <div className="w-16 h-16 rounded-lg bg-indigo-500 flex items-center justify-center flex-shrink-0">
                   <svg
                     width="31"
@@ -256,7 +264,11 @@ export default function Index() {
               </div>
 
               {/* Step 3: Generate Pages Instantly */}
-              <div className="flex flex-col items-center gap-6 p-6 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 md:delay-200">
+              <div className="relative flex flex-col items-center gap-6 p-6 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 md:delay-200">
+                {/* Number Badge */}
+                <div className="absolute top-6 left-6 w-7 h-7 bg-white rounded-full shadow-lg flex items-center justify-center">
+                  <span className="text-sm font-bold text-indigo-700">3</span>
+                </div>
                 <div className="w-16 h-16 rounded-lg bg-indigo-500 flex items-center justify-center flex-shrink-0">
                   <svg
                     width="31"
