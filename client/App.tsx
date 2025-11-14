@@ -22,12 +22,44 @@ export default function App() {
         <Sonner />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<><Navbar /><Index /></>} />
-            <Route path="/generator" element={<><Navbar /><Generator /></>} />
-            <Route path="/templates" element={<><Navbar /><Templates /></>} />
+            <Route
+              path="/"
+              element={
+                <>
+                  <Navbar />
+                  <Index />
+                </>
+              }
+            />
+            <Route
+              path="/generator"
+              element={
+                <>
+                  <Navbar />
+                  <Generator />
+                </>
+              }
+            />
+            <Route
+              path="/templates"
+              element={
+                <>
+                  <Navbar />
+                  <Templates />
+                </>
+              }
+            />
             <Route path="/aiPageTemplate" element={<AIPageTemplate />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<><Navbar /><NotFound /></>} />
+            <Route
+              path="*"
+              element={
+                <>
+                  <Navbar />
+                  <NotFound />
+                </>
+              }
+            />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
