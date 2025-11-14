@@ -42,12 +42,12 @@ export default function Navbar() {
             >
               Features
             </a>
-            <a
-              href="#templates"
+            <Link
+              to="/templates"
               className="text-zinc-700 text-lg font-medium hover:text-indigo-500 transition-colors"
             >
               Templates
-            </a>
+            </Link>
             <a
               href="#pricing"
               className="text-zinc-700 text-lg font-medium hover:text-indigo-500 transition-colors"
