@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+
 export default function Generator() {
   return (
     <div className="min-h-screen w-full bg-white pt-20">
@@ -179,6 +181,9 @@ export default function Generator() {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
