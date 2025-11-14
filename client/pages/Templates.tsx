@@ -194,9 +194,9 @@ export default function Templates() {
                 </p>
 
                 {/* Action Buttons */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3 w-full">
                   <button
-                    className="flex-1 px-5 py-3 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-base font-medium cursor-pointer"
+                    className="flex-1 px-4 py-2 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-sm font-medium cursor-pointer"
                     onClick={() =>
                       console.log(`View all templates for: ${template.title}`)
                     }
@@ -204,7 +204,7 @@ export default function Templates() {
                     All Templates
                   </button>
                   <button
-                    className="flex-1 px-5 py-3 border border-gray-400 hover:bg-gray-50 transition-colors rounded-lg text-zinc-700 text-base font-medium cursor-pointer"
+                    className="flex-1 px-4 py-2 border border-gray-400 hover:bg-gray-50 transition-colors rounded-lg text-zinc-700 text-sm font-medium cursor-pointer"
                     onClick={() => console.log(`Preview: ${template.title}`)}
                   >
                     Preview
