@@ -5,7 +5,7 @@ import AISection2 from "@/components/AISection2";
 import AISection3 from "@/components/AISection3";
 import AISection4 from "@/components/AISection4";
 import AISection5 from "@/components/AISection5";
-import Footer from "@/components/Footer";
+import AIFooter from "@/components/AIFooter";
 
 interface AIPageTemplateProps {
   sections?: React.ReactNode[];
@@ -30,7 +30,7 @@ export default function AIPageTemplate({ sections = [] }: AIPageTemplateProps) {
         ))}
       </main>
 
-      <Footer />
+      <AIFooter />
     </div>
   );
 }
