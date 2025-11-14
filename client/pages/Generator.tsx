@@ -182,6 +182,104 @@ export default function Generator() {
         </div>
       </div>
 
+      {/* Empty State Section */}
+      <div className="w-full bg-gradient-to-br from-indigo-50/80 via-purple-50/40 to-indigo-50/80 py-16 sm:py-20 lg:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-16">
+          <div className="flex flex-col items-center justify-center gap-6 max-w-3xl mx-auto text-center">
+            {/* Icon */}
+            <div className="w-20 h-20 rounded-full bg-indigo-200/30 flex items-center justify-center">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-9 h-9"
+              >
+                <path
+                  d="M4.25 29.75V26.9167H29.75V29.75H4.25ZM4.25 24.0833V4.25H29.75V24.0833H4.25Z"
+                  fill="#3F3F46"
+                />
+              </svg>
+            </div>
+
+            {/* Heading */}
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-tight">
+              <span className="text-gray-900">Your </span>
+              <span className="text-indigo-500">Generated Page</span>
+              <span className="text-gray-900"> Will Appear Here</span>
+            </h2>
+
+            {/* Description */}
+            <p className="text-base sm:text-lg text-zinc-700 leading-relaxed max-w-lg">
+              Enter a prompt above and click "Generate Page" to see your AI-created
+              landing page. You can then preview, edit, and export the code.
+            </p>
+
+            {/* Features */}
+            <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 mt-4">
+              <div className="flex items-center gap-2">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4"
+                >
+                  <path
+                    d="M12.3306 7.13914L6.57323 13.0591C6.41323 13.2231 6.1479 13.0331 6.2519 12.8291L8.30123 8.78514C8.31675 8.75462 8.32418 8.72062 8.3228 8.68641C8.32142 8.65219 8.31128 8.61891 8.29335 8.58974C8.27542 8.56057 8.2503 8.53649 8.2204 8.51981C8.19049 8.50312 8.15681 8.4944 8.12257 8.49447H3.8119C3.77253 8.49444 3.73404 8.48279 3.70126 8.46097C3.66848 8.43916 3.64287 8.40816 3.62764 8.37185C3.6124 8.33555 3.60822 8.29555 3.61562 8.25688C3.62302 8.21821 3.64167 8.18259 3.66923 8.15447L9.00923 2.74447C9.1639 2.5878 9.42123 2.7598 9.33523 2.96314L7.8039 6.57314C7.79093 6.60374 7.7858 6.6371 7.78896 6.67018C7.79213 6.70327 7.80349 6.73505 7.82201 6.76264C7.84054 6.79024 7.86566 6.81278 7.89509 6.82823C7.92451 6.84368 7.95733 6.85155 7.99057 6.85114L12.1846 6.79914C12.2241 6.7985 12.263 6.80962 12.2963 6.8311C12.3295 6.85257 12.3557 6.88343 12.3714 6.91976C12.3871 6.9561 12.3916 6.99627 12.3845 7.03521C12.3774 7.07414 12.3588 7.11008 12.3312 7.13847"
+                    fill="#18181B"
+                  />
+                </svg>
+                <span className="text-sm text-gray-900 font-medium">Fast Generation</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4"
+                >
+                  <path
+                    d="M8.59322 2L9.89989 2.26667L7.40656 14L6.09989 13.7333L8.59322 2ZM13.0599 8L10.6666 5.60667V3.72L14.9466 8L10.6666 12.2733V10.3867L13.0599 8ZM1.05322 8L5.33322 3.72V5.60667L2.93989 8L5.33322 10.3867V12.2733L1.05322 8Z"
+                    fill="#18181B"
+                  />
+                </svg>
+                <span className="text-sm text-gray-900 font-medium">Clean Code</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4"
+                >
+                  <g clipPath="url(#clip0_51_71)">
+                    <path
+                      d="M2.66667 3.99984V10.6665H6V7.99984C6 7.64622 6.14048 7.30708 6.39052 7.05703C6.64057 6.80698 6.97971 6.6665 7.33333 6.6665H10.6667C11.0203 6.6665 11.3594 6.80698 11.6095 7.05703C11.8595 7.30708 12 7.64622 12 7.99984V10.6665H13.3333V3.99984H2.66667ZM0 13.3332V11.9998H2.66667C2.31304 11.9998 1.97391 11.8594 1.72386 11.6093C1.47381 11.3593 1.33333 11.0201 1.33333 10.6665V3.99984C1.33333 3.64622 1.47381 3.30708 1.72386 3.05703C1.97391 2.80698 2.31304 2.6665 2.66667 2.6665H13.3333C13.687 2.6665 14.0261 2.80698 14.2761 3.05703C14.5262 3.30708 14.6667 3.64622 14.6667 3.99984V10.6665C14.6667 11.0201 14.5262 11.3593 14.2761 11.6093C14.0261 11.8594 13.687 11.9998 13.3333 11.9998H16V13.3332H12C12 13.6868 11.8595 14.0259 11.6095 14.276C11.3594 14.526 11.0203 14.6665 10.6667 14.6665H7.33333C6.97971 14.6665 6.64057 14.526 6.39052 14.276C6.14048 14.0259 6 13.6868 6 13.3332H0ZM7.66667 13.3332C7.57826 13.3332 7.49348 13.3683 7.43096 13.4308C7.36845 13.4933 7.33333 13.5781 7.33333 13.6665C7.33333 13.7549 7.36845 13.8397 7.43096 13.9022C7.49348 13.9647 7.57826 13.9998 7.66667 13.9998C7.75507 13.9998 7.83986 13.9647 7.90237 13.9022C7.96488 13.8397 8 13.7549 8 13.6665C8 13.5781 7.96488 13.4933 7.90237 13.4308C7.83986 13.3683 7.75507 13.3332 7.66667 13.3332ZM10.3333 13.3332C10.2449 13.3332 10.1601 13.3683 10.0976 13.4308C10.0351 13.4933 10 13.5781 10 13.6665C10 13.7549 10.0351 13.8397 10.0976 13.9022C10.1601 13.9647 10.2449 13.9998 10.3333 13.9998C10.4217 13.9998 10.5065 13.9647 10.569 13.9022C10.6315 13.8397 10.6667 13.7549 10.6667 13.6665C10.6667 13.5781 10.6315 13.4933 10.569 13.4308C10.5065 13.3683 10.4217 13.3332 10.3333 13.3332ZM8.66667 13.3332V13.9998H9.33333V13.3332H8.66667ZM7.33333 7.99984V12.6665H10.6667V7.99984H7.33333Z"
+                      fill="#18181B"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_51_71">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span className="text-sm text-gray-900 font-medium">Responsive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Footer */}
       <Footer />
     </div>
