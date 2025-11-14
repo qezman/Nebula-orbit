@@ -297,7 +297,7 @@ export default function Generator() {
             {/* Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 w-full">
               {/* Card 1: Describe Your Page */}
-              <div className="relative flex flex-col items-center gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-md">
+              <div className="relative flex flex-col items-center gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
                 {/* Number Badge */}
                 <div className="absolute top-6 left-6 w-7 h-7 bg-white rounded-full shadow-lg flex items-center justify-center">
                   <span className="text-sm font-bold text-indigo-700">1</span>
@@ -332,7 +332,7 @@ export default function Generator() {
               </div>
 
               {/* Card 2: AI Generates Code */}
-              <div className="relative flex flex-col items-center gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-md">
+              <div className="relative flex flex-col items-center gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
                 {/* Number Badge */}
                 <div className="absolute top-6 left-6 w-7 h-7 bg-white rounded-full shadow-lg flex items-center justify-center">
                   <span className="text-sm font-bold text-indigo-700">2</span>
@@ -367,7 +367,7 @@ export default function Generator() {
               </div>
 
               {/* Card 3: Export & Use */}
-              <div className="relative flex flex-col items-center gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-md">
+              <div className="relative flex flex-col items-center gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
                 {/* Number Badge */}
                 <div className="absolute top-6 left-6 w-7 h-7 bg-white rounded-full shadow-lg flex items-center justify-center">
                   <span className="text-sm font-bold text-indigo-700">3</span>
