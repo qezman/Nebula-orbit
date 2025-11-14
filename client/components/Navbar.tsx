@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-zinc-200/50">
@@ -62,9 +64,12 @@ export default function Navbar() {
 
           {/* CTA Buttons */}
           <div className="hidden sm:flex items-center gap-3 ml-auto">
-            <button className="px-5 py-3 text-indigo-500 text-lg font-semibold hover:text-indigo-600 transition-colors">
+            <Link
+              to="/generator"
+              className="px-5 py-3 text-indigo-500 text-lg font-semibold hover:text-indigo-600 transition-colors"
+            >
               Get Started
-            </button>
+            </Link>
             <button className="px-5 py-3 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-lg font-semibold">
               Sign In
             </button>
