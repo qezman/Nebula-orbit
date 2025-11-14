@@ -3,8 +3,8 @@ import Footer from "../components/Footer";
 export default function Generator() {
   return (
     <div className="min-h-screen w-full bg-white pt-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12 lg:py-16">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 lg:py-12">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-10">
           {/* Left Column - Input Section */}
           <div className="flex-1 flex flex-col gap-8">
             {/* Header */}
@@ -22,9 +22,9 @@ export default function Generator() {
             </div>
 
             {/* Prompt Section */}
-            <div className="flex flex-col gap-12 p-6 rounded-2xl bg-gray-100">
+            <div className="flex flex-col gap-10 p-5 rounded-2xl bg-gray-100">
               {/* Prompt Input */}
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-4">
                 <h2 className="text-xl font-medium text-black">Your Prompt</h2>
                 <div className="relative">
                   <textarea
@@ -39,9 +39,9 @@ export default function Generator() {
               </div>
 
               {/* Examples */}
-              <div className="flex flex-col gap-6">
-                <h2 className="text-xl font-medium text-black">Examples</h2>
-                <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-4">
+                <h2 className="text-lg font-medium text-black">Examples</h2>
+                <div className="flex flex-col gap-3">
                   <div className="flex flex-wrap gap-3">
                     <button className="px-8 py-4 rounded-full border-2 border-indigo-500 bg-gray-100 text-indigo-500 text-base font-semibold hover:bg-indigo-50 transition-colors">
                       SaaS Product Launch
@@ -192,9 +192,9 @@ export default function Generator() {
       </div>
 
       {/* Empty State Section */}
-      <div className="w-full bg-gradient-to-br from-indigo-50/80 via-purple-50/40 to-indigo-50/80 py-16 sm:py-20 lg:py-24">
+      <div className="w-full bg-gradient-to-br from-indigo-50/80 via-purple-50/40 to-indigo-50/80 py-12 lg:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="flex flex-col items-center justify-center gap-6 max-w-3xl mx-auto text-center">
+          <div className="flex flex-col items-center justify-center gap-5 max-w-3xl mx-auto text-center">
             {/* Icon */}
             <div className="w-20 h-20 rounded-full bg-indigo-200/30 flex items-center justify-center">
               <svg
