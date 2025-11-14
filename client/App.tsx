@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Generator from "./pages/Generator";
 import Templates from "./pages/Templates";
+import AIPageTemplate from "./pages/AIPageTemplate";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
@@ -20,13 +21,13 @@ export default function App() {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <Navbar />
           <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/generator" element={<Generator />} />
-            <Route path="/templates" element={<Templates />} />
+            <Route path="/" element={<><Navbar /><Index /></>} />
+            <Route path="/generator" element={<><Navbar /><Generator /></>} />
+            <Route path="/templates" element={<><Navbar /><Templates /></>} />
+            <Route path="/aiPageTemplate" element={<AIPageTemplate />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<><Navbar /><NotFound /></>} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
