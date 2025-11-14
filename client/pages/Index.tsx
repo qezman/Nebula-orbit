@@ -13,10 +13,11 @@ export default function Index() {
                 <span className="text-indigo-500">Stunning Landing Pages</span>
                 <span className="text-zinc-900"> with AI</span>
               </h1>
-              
+
               {/* Subheadline */}
               <p className="w-full text-zinc-600 text-base sm:text-lg font-medium leading-relaxed">
-                Use your own design system and components to instantly build production-ready pages.
+                Use your own design system and components to instantly build
+                production-ready pages.
               </p>
             </div>
 
