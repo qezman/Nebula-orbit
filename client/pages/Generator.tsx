@@ -297,9 +297,9 @@ export default function Generator() {
       </div>
 
       {/* How It Works Section */}
-      <div className="w-full bg-gradient-to-br from-indigo-50/40 via-purple-50/20 to-indigo-50/40 py-12 sm:py-16 lg:py-20">
+      <div className="w-full bg-gradient-to-br from-indigo-50/40 via-purple-50/20 to-indigo-50/40 py-12 lg:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="flex flex-col items-center gap-8 sm:gap-12">
+          <div className="flex flex-col items-center gap-8">
             {/* Section Header */}
             <div className="flex flex-col items-center gap-3 text-center max-w-3xl">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-zinc-900">
