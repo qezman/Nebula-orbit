@@ -312,7 +312,8 @@ export default function Index() {
                 <span className="text-zinc-900"> Templates</span>
               </h2>
               <p className="text-base sm:text-lg text-zinc-700 font-medium leading-relaxed">
-                Start with professionally designed templates and customize to your brand
+                Start with professionally designed templates and customize to
+                your brand
               </p>
             </div>
 
@@ -332,7 +333,8 @@ export default function Index() {
                     SaaS Pro
                   </h3>
                   <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                    Perfect for B2B SaaS products with conversion-focused sections
+                    Perfect for B2B SaaS products with conversion-focused
+                    sections
                   </p>
                   <a
                     href="#"
@@ -466,9 +468,9 @@ export default function Index() {
               </svg>
 
               <blockquote className="text-center text-2xl sm:text-3xl lg:text-4xl font-medium leading-tight sm:leading-snug tracking-tight text-zinc-900 px-4 sm:px-8">
-                "<span className="font-semibold text-indigo-500">Nebula</span> AI
-                builder transformed our design-to-development workflow. We now ship
-                landing pages{" "}
+                "<span className="font-semibold text-indigo-500">Nebula</span>{" "}
+                AI builder transformed our design-to-development workflow. We
+                now ship landing pages{" "}
                 <span className="font-medium text-indigo-500">10x faster</span>{" "}
                 while maintaining our design system standards perfectly."
               </blockquote>
