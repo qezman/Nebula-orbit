@@ -1,61 +1,46 @@
-import { DemoResponse } from "@shared/api";
-import { useEffect, useState } from "react";
-
 export default function Index() {
-  const [exampleFromServer, setExampleFromServer] = useState("");
-  // Fetch users on component mount
-  useEffect(() => {
-    fetchDemo();
-  }, []);
-
-  // Example of how to fetch data from the server (if needed)
-  const fetchDemo = async () => {
-    try {
-      const response = await fetch("/api/demo");
-      const data = (await response.json()) as DemoResponse;
-      setExampleFromServer(data.message);
-    } catch (error) {
-      console.error("Error fetching hello:", error);
-    }
-  };
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
-      <div className="text-center">
-        {/* TODO: FUSION_GENERATION_APP_PLACEHOLDER replace everything here with the actual app! */}
-        <h1 className="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
-          <svg
-            className="animate-spin h-8 w-8 text-slate-400"
-            viewBox="0 0 50 50"
-          >
-            <circle
-              className="opacity-30"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
+    <div className="min-h-screen w-full bg-gradient-to-br from-indigo-50/50 via-purple-50/30 to-indigo-50/50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12 lg:py-16">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12">
+          {/* Left Content */}
+          <div className="flex flex-col justify-center items-start gap-8 flex-1 max-w-2xl">
+            {/* Headline and Description */}
+            <div className="flex flex-col items-start gap-3 w-full">
+              {/* Main Headline */}
+              <h1 className="w-full text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+                <span className="text-zinc-900">Generate </span>
+                <span className="text-indigo-500">Stunning Landing Pages</span>
+                <span className="text-zinc-900"> with AI</span>
+              </h1>
+              
+              {/* Subheadline */}
+              <p className="w-full text-zinc-600 text-base sm:text-lg font-medium leading-relaxed">
+                Use your own design system and components to instantly build production-ready pages.
+              </p>
+            </div>
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-start gap-3 w-full sm:w-auto">
+              <button className="px-6 py-5 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-lg sm:text-xl font-semibold leading-tight cursor-pointer">
+                Start Creating
+              </button>
+              <button className="px-6 py-5 border-2 border-indigo-500 hover:bg-indigo-50 transition-colors rounded-lg bg-transparent text-indigo-500 text-lg sm:text-xl font-semibold leading-tight cursor-pointer">
+                Explore Templates
+              </button>
+            </div>
+          </div>
+
+          {/* Right Image */}
+          <div className="flex-shrink-0 w-full lg:w-auto max-w-md lg:max-w-lg xl:max-w-xl">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/253344f356df28d3949e5beffcf4c03a2838b1dd?width=1092"
+              alt="Landing page preview on laptop"
+              loading="lazy"
+              className="w-full h-auto rounded-xl object-cover shadow-lg"
             />
-            <circle
-              className="text-slate-600"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-              strokeDasharray="100"
-              strokeDashoffset="75"
-            />
-          </svg>
-          Generating your app...
-        </h1>
-        <p className="mt-4 text-slate-600 max-w-md">
-          Watch the chat on the left for updates that might need your attention
-          to finish generating
-        </p>
-        <p className="mt-4 hidden max-w-md">{exampleFromServer}</p>
+          </div>
+        </div>
       </div>
     </div>
   );
