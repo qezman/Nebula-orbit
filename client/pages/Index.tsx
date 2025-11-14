@@ -520,9 +520,12 @@ export default function Index() {
             </div>
 
             {/* CTA Button */}
-            <button className="px-6 sm:px-8 py-5 sm:py-6 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-lg sm:text-xl font-semibold leading-tight shadow-md hover:shadow-lg">
+            <Link
+              to="/generator"
+              className="inline-block px-6 sm:px-8 py-5 sm:py-6 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-lg sm:text-xl font-semibold leading-tight shadow-md hover:shadow-lg"
+            >
               Get Started Free
-            </button>
+            </Link>
           </div>
         </div>
       </div>
