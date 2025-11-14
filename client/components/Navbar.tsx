@@ -51,6 +51,12 @@ export default function Navbar() {
             >
               Templates
             </Link>
+            <Link
+              to="/aiPageTemplate"
+              className="text-zinc-700 text-lg font-medium hover:text-indigo-500 transition-colors"
+            >
+              AI Generator
+            </Link>
             <a
               href="#pricing"
               className="text-zinc-700 text-lg font-medium hover:text-indigo-500 transition-colors opacity-50 cursor-not-allowed"
