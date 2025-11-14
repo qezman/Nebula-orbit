@@ -1,29 +1,39 @@
-import { Link } from "react-router-dom";
-
 export default function AINavbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white">
-      <div className="w-full max-w-[1200px] mx-auto px-2.5 py-2.5">
-        <div className="flex items-center justify-center h-[70px] gap-[135px]">
+      <div className="w-full max-w-[1200px] mx-auto px-2.5 py-2.5 flex flex-col justify-center items-center gap-2.5">
+        <div className="h-[70px] w-full max-w-[1100px] flex justify-center items-center gap-8 lg:gap-[135px]">
           {/* Logo */}
-          <div className="flex items-center justify-center p-2.5">
-            <button className="flex items-center justify-center gap-2.5 px-1.5 py-1.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300">
-              <div className="w-5 h-5 rounded bg-zinc-800" />
-            </button>
+          <div className="flex p-2.5 justify-center items-center gap-2.5">
+            <div className="flex py-1.5 justify-center items-center gap-2.5 rounded bg-zinc-200 px-3">
+              <div className="w-20 h-6" />
+            </div>
           </div>
 
           {/* Navigation Links */}
-          <div className="hidden lg:flex items-center justify-center gap-5 p-2.5">
-            <button className="flex items-center justify-center gap-2.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300 px-2.5 py-1.5" />
-            <button className="flex items-center justify-center gap-2.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300 px-2.5 py-1.5" />
-            <button className="flex items-center justify-center gap-2.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300 px-2.5 py-1.5" />
-            <button className="flex items-center justify-center gap-2.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300 px-2.5 py-1.5" />
+          <div className="hidden lg:flex p-2.5 justify-center items-center gap-5">
+            <div className="flex justify-center items-center gap-2.5 rounded bg-zinc-200 px-3 py-1.5">
+              <div className="w-20 h-6" />
+            </div>
+            <div className="flex justify-center items-center gap-2.5 rounded bg-zinc-200 px-3 py-1.5">
+              <div className="w-20 h-6" />
+            </div>
+            <div className="flex justify-center items-center gap-2.5 rounded bg-zinc-200 px-3 py-1.5">
+              <div className="w-20 h-6" />
+            </div>
+            <div className="flex justify-center items-center gap-2.5 rounded bg-zinc-200 px-3 py-1.5">
+              <div className="w-20 h-6" />
+            </div>
           </div>
 
           {/* CTAs */}
-          <div className="hidden sm:flex items-center justify-center gap-5 p-2.5 flex-1">
-            <button className="flex items-center justify-center gap-2.5 px-1.5 py-1.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300" />
-            <button className="flex items-center justify-center gap-2.5 px-1.5 py-1.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300" />
+          <div className="hidden sm:flex p-2.5 justify-center items-center gap-5 flex-1 self-stretch">
+            <div className="flex py-1.5 justify-center items-center gap-2.5 rounded bg-zinc-200 px-3">
+              <div className="w-20 h-6" />
+            </div>
+            <div className="flex py-1.5 justify-center items-center gap-2.5 rounded bg-zinc-200 px-3">
+              <div className="w-20 h-6" />
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
