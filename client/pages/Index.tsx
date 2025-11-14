@@ -1,6 +1,6 @@
 export default function Index() {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-indigo-50/50 via-purple-50/30 to-indigo-50/50">
+    <div className="min-h-screen w-full bg-gradient-to-br from-indigo-50/50 via-purple-50/30 to-indigo-50/50 pt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12 lg:py-16">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12">
           {/* Left Content */}
