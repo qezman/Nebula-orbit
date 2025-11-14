@@ -36,12 +36,12 @@ export default function Navbar() {
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center gap-5">
-            <a
-              href="#features"
+            <Link
+              to="/"
               className="text-zinc-700 text-lg font-medium hover:text-indigo-500 transition-colors"
             >
               Features
-            </a>
+            </Link>
             <Link
               to="/templates"
               className="text-zinc-700 text-lg font-medium hover:text-indigo-500 transition-colors"
@@ -50,13 +50,15 @@ export default function Navbar() {
             </Link>
             <a
               href="#pricing"
-              className="text-zinc-700 text-lg font-medium hover:text-indigo-500 transition-colors"
+              className="text-zinc-700 text-lg font-medium hover:text-indigo-500 transition-colors opacity-50 cursor-not-allowed"
+              title="Coming Soon"
             >
               Pricing
             </a>
             <a
               href="#docs"
-              className="text-zinc-700 text-lg font-medium hover:text-indigo-500 transition-colors"
+              className="text-zinc-700 text-lg font-medium hover:text-indigo-500 transition-colors opacity-50 cursor-not-allowed"
+              title="Coming Soon"
             >
               Docs
             </a>
