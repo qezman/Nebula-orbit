@@ -74,8 +74,8 @@ export default function Templates() {
   return (
     <div className="min-h-screen w-full bg-white pt-20">
       {/* Header Section */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12 lg:py-16">
-        <div className="flex flex-col items-center gap-3 text-center max-w-3xl mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 lg:py-12">
+        <div className="flex flex-col items-center gap-2 text-center max-w-3xl mx-auto">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight">
             <span className="text-gray-900">Template </span>
             <span className="text-indigo-500">Marketplace</span>
@@ -89,8 +89,8 @@ export default function Templates() {
 
       {/* Filter Section */}
       <div className="w-full border-t border-b border-gray-300 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-5">
-          <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-4">
+          <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
             {/* Filter Buttons */}
             <div className="flex flex-wrap items-center gap-2 flex-1">
               <button
@@ -168,8 +168,8 @@ export default function Templates() {
       </div>
 
       {/* Templates Grid */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 sm:py-16 lg:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 lg:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {filteredTemplates.map((template) => (
             <div
               key={template.id}
@@ -216,9 +216,9 @@ export default function Templates() {
         </div>
 
         {/* Load More Button */}
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center mt-8">
           <button
-            className="px-8 py-5 border border-gray-400 hover:bg-gray-50 transition-colors rounded-lg text-zinc-700 text-2xl font-medium cursor-pointer"
+            className="px-8 py-3 border border-gray-400 hover:bg-gray-50 transition-colors rounded-lg text-zinc-700 text-lg font-medium cursor-pointer"
             onClick={() => console.log("Loading more templates...")}
           >
             Load More Templates
