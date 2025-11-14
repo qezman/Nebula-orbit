@@ -55,7 +55,8 @@ export default function Index() {
               <span className="text-zinc-900"> Features for Modern Teams</span>
             </h2>
             <p className="text-base sm:text-lg text-gray-600 font-medium leading-relaxed">
-              Build faster with AI-powered precision and design system consistency
+              Build faster with AI-powered precision and design system
+              consistency
             </p>
           </div>
 
@@ -90,7 +91,8 @@ export default function Index() {
                   Figma-to-React Precision
                 </h3>
                 <p className="text-base sm:text-lg text-zinc-700 leading-relaxed">
-                  Convert your Figma designs into pixel-perfect React components with complete design token fidelity.
+                  Convert your Figma designs into pixel-perfect React components
+                  with complete design token fidelity.
                 </p>
               </div>
             </div>
@@ -117,7 +119,8 @@ export default function Index() {
                   AI-Powered Layout Intelligence
                 </h3>
                 <p className="text-base sm:text-lg text-zinc-700 leading-relaxed">
-                  Smart algorithms understand your design patterns and generate contextually appropriate layouts automatically.
+                  Smart algorithms understand your design patterns and generate
+                  contextually appropriate layouts automatically.
                 </p>
               </div>
             </div>
@@ -146,7 +149,8 @@ export default function Index() {
                   Design System Consistency
                 </h3>
                 <p className="text-base sm:text-lg text-zinc-700 leading-relaxed">
-                  Maintain brand consistency across all pages with automated design system enforcement and validation.
+                  Maintain brand consistency across all pages with automated
+                  design system enforcement and validation.
                 </p>
               </div>
             </div>
