@@ -15,7 +15,9 @@ export default function Generator() {
                 <span className="text-gray-900"> with AI</span>
               </h1>
               <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-                Describe your vision in natural language and watch as our AI crafts a stunning, fully-responsive landing page tailored to your needs.
+                Describe your vision in natural language and watch as our AI
+                crafts a stunning, fully-responsive landing page tailored to
+                your needs.
               </p>
             </div>
 
@@ -70,7 +72,9 @@ export default function Generator() {
           <div className="w-full lg:w-[400px] flex flex-col gap-7 p-6 rounded-xl bg-gradient-to-br from-indigo-50/80 via-purple-50/40 to-indigo-50/80">
             {/* Header */}
             <div className="flex flex-col gap-2">
-              <h2 className="text-2xl font-semibold text-black">Live Preview</h2>
+              <h2 className="text-2xl font-semibold text-black">
+                Live Preview
+              </h2>
               <p className="text-base text-slate-600">
                 Watch your page come to life in real-time
               </p>
@@ -145,7 +149,9 @@ export default function Generator() {
                 <span className="text-xs text-zinc-600">Accuracy</span>
               </div>
               <div className="flex flex-col items-center gap-1 p-4 bg-white rounded-xl">
-                <span className="text-2xl font-bold text-amber-500">&lt;3s</span>
+                <span className="text-2xl font-bold text-amber-500">
+                  &lt;3s
+                </span>
                 <span className="text-xs text-zinc-600">Generation</span>
               </div>
               <div className="flex flex-col items-center gap-1 p-4 bg-white rounded-xl">
@@ -172,9 +178,12 @@ export default function Generator() {
                 </svg>
               </div>
               <div className="flex flex-col gap-2 flex-1">
-                <h3 className="text-base font-semibold text-zinc-900">Pro Tip</h3>
+                <h3 className="text-base font-semibold text-zinc-900">
+                  Pro Tip
+                </h3>
                 <p className="text-xs text-zinc-600 leading-relaxed">
-                  Be specific about layout, colors, and sections. The more detail you provide, the better your result!
+                  Be specific about layout, colors, and sections. The more
+                  detail you provide, the better your result!
                 </p>
               </div>
             </div>
@@ -212,8 +221,9 @@ export default function Generator() {
 
             {/* Description */}
             <p className="text-base sm:text-lg text-zinc-700 leading-relaxed max-w-lg">
-              Enter a prompt above and click "Generate Page" to see your AI-created
-              landing page. You can then preview, edit, and export the code.
+              Enter a prompt above and click "Generate Page" to see your
+              AI-created landing page. You can then preview, edit, and export
+              the code.
             </p>
 
             {/* Features */}
@@ -232,7 +242,9 @@ export default function Generator() {
                     fill="#18181B"
                   />
                 </svg>
-                <span className="text-sm text-gray-900 font-medium">Fast Generation</span>
+                <span className="text-sm text-gray-900 font-medium">
+                  Fast Generation
+                </span>
               </div>
 
               <div className="flex items-center gap-2">
@@ -249,7 +261,9 @@ export default function Generator() {
                     fill="#18181B"
                   />
                 </svg>
-                <span className="text-sm text-gray-900 font-medium">Clean Code</span>
+                <span className="text-sm text-gray-900 font-medium">
+                  Clean Code
+                </span>
               </div>
 
               <div className="flex items-center gap-2">
@@ -273,7 +287,9 @@ export default function Generator() {
                     </clipPath>
                   </defs>
                 </svg>
-                <span className="text-sm text-gray-900 font-medium">Responsive</span>
+                <span className="text-sm text-gray-900 font-medium">
+                  Responsive
+                </span>
               </div>
             </div>
           </div>
