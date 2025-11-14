@@ -9,51 +9,65 @@ export default function Templates() {
     {
       id: 1,
       title: "SaaS Classic",
-      description: "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
+      description:
+        "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
       category: "saas",
     },
     {
       id: 2,
       title: "SaaS Minimal",
-      description: "Ultra-clean minimalist design focusing on clarity and user experience.",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/8b406baed77d318c68f96b7e5bb37e76f196668b?width=924",
+      description:
+        "Ultra-clean minimalist design focusing on clarity and user experience.",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/8b406baed77d318c68f96b7e5bb37e76f196668b?width=924",
       category: "saas",
     },
     {
       id: 3,
       title: "Currency Exchange",
-      description: "Perfect for creative agencies showcasing their work with style and elegance.",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/0805bfb64fc2b934b7d0a64cf5859c84cb043b3d?width=892",
+      description:
+        "Perfect for creative agencies showcasing their work with style and elegance.",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/0805bfb64fc2b934b7d0a64cf5859c84cb043b3d?width=892",
       category: "agency",
     },
     {
       id: 4,
       title: "SaaS Classic",
-      description: "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
+      description:
+        "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
       category: "saas",
     },
     {
       id: 5,
       title: "SaaS Minimal",
-      description: "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/8b406baed77d318c68f96b7e5bb37e76f196668b?width=924",
+      description:
+        "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/8b406baed77d318c68f96b7e5bb37e76f196668b?width=924",
       category: "saas",
     },
     {
       id: 6,
       title: "Agency Clean",
-      description: "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
+      description:
+        "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
       category: "agency",
     },
   ];
 
   const filteredTemplates = templates.filter((template) => {
-    const matchesFilter = activeFilter === "all" || template.category === activeFilter;
-    const matchesSearch = template.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         template.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesFilter =
+      activeFilter === "all" || template.category === activeFilter;
+    const matchesSearch =
+      template.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      template.description.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesFilter && matchesSearch;
   });
 
@@ -67,7 +81,8 @@ export default function Templates() {
             <span className="text-indigo-500">Marketplace</span>
           </h1>
           <p className="text-base sm:text-lg text-gray-600 font-medium leading-relaxed">
-            Choose from professionally designed templates built on your components.
+            Choose from professionally designed templates built on your
+            components.
           </p>
         </div>
       </div>
@@ -182,7 +197,9 @@ export default function Templates() {
                 <div className="flex items-center gap-4">
                   <button
                     className="flex-1 px-5 py-3 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-base font-medium cursor-pointer"
-                    onClick={() => console.log(`View all templates for: ${template.title}`)}
+                    onClick={() =>
+                      console.log(`View all templates for: ${template.title}`)
+                    }
                   >
                     All Templates
                   </button>
