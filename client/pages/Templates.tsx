@@ -180,10 +180,16 @@ export default function Templates() {
 
                 {/* Action Buttons */}
                 <div className="flex items-center gap-4">
-                  <button className="flex-1 px-5 py-3 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-base font-medium">
+                  <button
+                    className="flex-1 px-5 py-3 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-base font-medium cursor-pointer"
+                    onClick={() => console.log(`View all templates for: ${template.title}`)}
+                  >
                     All Templates
                   </button>
-                  <button className="flex-1 px-5 py-3 border border-gray-400 hover:bg-gray-50 transition-colors rounded-lg text-zinc-700 text-base font-medium">
+                  <button
+                    className="flex-1 px-5 py-3 border border-gray-400 hover:bg-gray-50 transition-colors rounded-lg text-zinc-700 text-base font-medium cursor-pointer"
+                    onClick={() => console.log(`Preview: ${template.title}`)}
+                  >
                     Preview
                   </button>
                 </div>
@@ -194,7 +200,10 @@ export default function Templates() {
 
         {/* Load More Button */}
         <div className="flex justify-center mt-12">
-          <button className="px-8 py-5 border border-gray-400 hover:bg-gray-50 transition-colors rounded-lg text-zinc-700 text-2xl font-medium">
+          <button
+            className="px-8 py-5 border border-gray-400 hover:bg-gray-50 transition-colors rounded-lg text-zinc-700 text-2xl font-medium cursor-pointer"
+            onClick={() => console.log("Loading more templates...")}
+          >
             Load More Templates
           </button>
         </div>

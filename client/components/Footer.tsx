@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="w-full bg-white border-t border-gray-200">
@@ -44,25 +46,26 @@ export default function Footer() {
             <h3 className="text-base font-semibold text-zinc-900">Product</h3>
             <ul className="flex flex-col gap-3">
               <li>
-                <a
-                  href="#features"
+                <Link
+                  to="/"
                   className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
                 >
                   Features
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#templates"
+                <Link
+                  to="/templates"
                   className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
                 >
                   Templates
-                </a>
+                </Link>
               </li>
               <li>
                 <a
                   href="#pricing"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors opacity-50 cursor-not-allowed"
+                  title="Coming Soon"
                 >
                   Pricing
                 </a>
@@ -70,7 +73,8 @@ export default function Footer() {
               <li>
                 <a
                   href="#changelog"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors opacity-50 cursor-not-allowed"
+                  title="Coming Soon"
                 >
                   Change log
                 </a>
@@ -85,7 +89,8 @@ export default function Footer() {
               <li>
                 <a
                   href="#docs"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors opacity-50 cursor-not-allowed"
+                  title="Coming Soon"
                 >
                   Documentation
                 </a>
@@ -93,7 +98,8 @@ export default function Footer() {
               <li>
                 <a
                   href="#tutorials"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors opacity-50 cursor-not-allowed"
+                  title="Coming Soon"
                 >
                   Tutorials
                 </a>
@@ -101,7 +107,8 @@ export default function Footer() {
               <li>
                 <a
                   href="#blog"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors opacity-50 cursor-not-allowed"
+                  title="Coming Soon"
                 >
                   Blog
                 </a>
@@ -109,7 +116,8 @@ export default function Footer() {
               <li>
                 <a
                   href="#support"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors opacity-50 cursor-not-allowed"
+                  title="Coming Soon"
                 >
                   Support
                 </a>
