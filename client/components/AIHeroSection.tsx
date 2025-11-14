@@ -16,12 +16,8 @@ export default function AIHeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-start gap-2.5 w-full">
-            <button className="w-full sm:w-auto min-w-[177px] h-[70px] px-5 py-6 flex items-center justify-center rounded-lg bg-indigo-500 hover:bg-indigo-600 transition-colors">
-              <span className="text-white text-lg font-semibold">Get Started</span>
-            </button>
-            <button className="w-full sm:w-auto min-w-[219px] h-[72px] px-5 py-6 flex items-center justify-center rounded-lg bg-zinc-100 hover:bg-zinc-200 transition-colors">
-              <span className="text-zinc-700 text-lg font-medium">Learn More</span>
-            </button>
+            <button className="w-full sm:w-auto min-w-[177px] h-[70px] px-5 py-6 flex items-center justify-center rounded-lg bg-indigo-500 hover:bg-indigo-600 transition-colors" />
+            <button className="w-full sm:w-auto min-w-[219px] h-[72px] px-5 py-6 flex items-center justify-center rounded-lg bg-zinc-100 hover:bg-zinc-200 transition-colors" />
           </div>
         </div>
 

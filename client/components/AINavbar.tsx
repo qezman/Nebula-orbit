@@ -9,48 +9,21 @@ export default function AINavbar() {
           <div className="flex items-center justify-center p-2.5">
             <button className="flex items-center justify-center gap-2.5 px-1.5 py-1.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300">
               <div className="w-5 h-5 rounded bg-zinc-800" />
-              <span className="text-center font-inter text-xl font-medium leading-6 text-zinc-700">
-                Features
-              </span>
             </button>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden lg:flex items-center justify-center gap-5 p-2.5">
-            <button className="flex items-center justify-center gap-2.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300">
-              <span className="text-center font-inter text-xl font-medium leading-6 text-zinc-700 px-2.5 py-1.5">
-                Features
-              </span>
-            </button>
-            <button className="flex items-center justify-center gap-2.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300">
-              <span className="text-center font-inter text-xl font-medium leading-6 text-zinc-700 px-2.5 py-1.5">
-                Features
-              </span>
-            </button>
-            <button className="flex items-center justify-center gap-2.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300">
-              <span className="text-center font-inter text-xl font-medium leading-6 text-zinc-700 px-2.5 py-1.5">
-                Features
-              </span>
-            </button>
-            <button className="flex items-center justify-center gap-2.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300">
-              <span className="text-center font-inter text-xl font-medium leading-6 text-zinc-700 px-2.5 py-1.5">
-                Features
-              </span>
-            </button>
+            <button className="flex items-center justify-center gap-2.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300 px-2.5 py-1.5" />
+            <button className="flex items-center justify-center gap-2.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300 px-2.5 py-1.5" />
+            <button className="flex items-center justify-center gap-2.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300 px-2.5 py-1.5" />
+            <button className="flex items-center justify-center gap-2.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300 px-2.5 py-1.5" />
           </div>
 
           {/* CTAs */}
           <div className="hidden sm:flex items-center justify-center gap-5 p-2.5 flex-1">
-            <button className="flex items-center justify-center gap-2.5 px-1.5 py-1.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300">
-              <span className="text-center font-inter text-xl font-medium leading-6 text-zinc-700">
-                Features
-              </span>
-            </button>
-            <button className="flex items-center justify-center gap-2.5 px-1.5 py-1.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300">
-              <span className="text-center font-inter text-xl font-medium leading-6 text-zinc-700">
-                Features
-              </span>
-            </button>
+            <button className="flex items-center justify-center gap-2.5 px-1.5 py-1.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300" />
+            <button className="flex items-center justify-center gap-2.5 px-1.5 py-1.5 rounded bg-zinc-200 transition-colors hover:bg-zinc-300" />
           </div>
 
           {/* Mobile Menu Button */}
