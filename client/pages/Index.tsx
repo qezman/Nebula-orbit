@@ -5,8 +5,8 @@ export default function Index() {
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-indigo-50/50 via-purple-50/30 to-indigo-50/50 pt-20">
       {/* Hero Section */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12 lg:py-16">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 lg:py-20">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16">
           {/* Left Content */}
           <div className="flex flex-col justify-center items-start gap-8 flex-1 max-w-2xl">
             {/* Headline and Description */}
@@ -55,8 +55,8 @@ export default function Index() {
       </div>
 
       {/* Features Section */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12 lg:py-16">
-        <div className="flex flex-col items-center gap-8 sm:gap-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 lg:py-20">
+        <div className="flex flex-col items-center gap-10">
           {/* Section Header */}
           <div className="flex flex-col items-center gap-3 text-center max-w-3xl">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight">
@@ -168,9 +168,9 @@ export default function Index() {
       </div>
 
       {/* How It Works Section */}
-      <div className="w-full bg-gradient-to-br from-indigo-50/40 via-purple-50/20 to-indigo-50/40 py-12 sm:py-16 lg:py-20">
+      <div className="w-full bg-gradient-to-br from-indigo-50/40 via-purple-50/20 to-indigo-50/40 py-12 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="flex flex-col items-center gap-8 sm:gap-12">
+          <div className="flex flex-col items-center gap-10">
             {/* Section Header */}
             <div className="flex flex-col items-center gap-3 text-center max-w-3xl">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-zinc-900">
@@ -504,11 +504,11 @@ export default function Index() {
       </div>
 
       {/* CTA Section */}
-      <div className="w-full bg-white py-16 sm:py-20 lg:py-24">
+      <div className="w-full bg-white py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="flex flex-col items-center justify-center gap-8 max-w-4xl mx-auto text-center">
+          <div className="flex flex-col items-center justify-center gap-6 max-w-4xl mx-auto text-center">
             {/* Heading */}
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-gray-900">
                 Start Building{" "}
                 <span className="text-indigo-500">Beautiful</span> Pages Today
@@ -522,7 +522,7 @@ export default function Index() {
             {/* CTA Button */}
             <Link
               to="/generator"
-              className="inline-block px-6 sm:px-8 py-5 sm:py-6 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-lg sm:text-xl font-semibold leading-tight shadow-md hover:shadow-lg"
+              className="inline-flex items-center justify-center px-8 py-4 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-lg font-semibold shadow-md hover:shadow-lg"
             >
               Get Started Free
             </Link>
