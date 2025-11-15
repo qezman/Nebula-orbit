@@ -511,8 +511,8 @@ export default function Index() {
       </div>
 
       {/* CTA Section */}
-      <div className="w-full bg-white py-16 lg:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-16">
+      <div className="w-full bg-white py-16 lg:py-20" ref={ctaRef.ref}>
+        <div className={`container mx-auto px-4 sm:px-6 lg:px-16 transition-all duration-1000 ${ctaRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
           <div className="flex flex-col items-center justify-center gap-6 max-w-4xl mx-auto text-center">
             {/* Heading */}
             <div className="flex flex-col gap-2">
