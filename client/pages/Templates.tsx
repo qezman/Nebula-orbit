@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useInView } from "../hooks/useInView";
 import Footer from "../components/Footer";
 
@@ -19,6 +20,7 @@ export default function Templates() {
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
       category: "saas",
+      link: "/templates/live/saas-classic-1",
     },
     {
       id: 2,
@@ -28,6 +30,7 @@ export default function Templates() {
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/8b406baed77d318c68f96b7e5bb37e76f196668b?width=924",
       category: "saas",
+      link: "/templates/live/saas-minimal-2",
     },
     {
       id: 3,
@@ -37,6 +40,7 @@ export default function Templates() {
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/0805bfb64fc2b934b7d0a64cf5859c84cb043b3d?width=892",
       category: "agency",
+      link: "/templates/live/currency-exchange-3",
     },
     {
       id: 4,
@@ -46,6 +50,7 @@ export default function Templates() {
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
       category: "saas",
+      link: "/templates/live/saas-classic-4",
     },
     {
       id: 5,
@@ -55,6 +60,7 @@ export default function Templates() {
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/8b406baed77d318c68f96b7e5bb37e76f196668b?width=924",
       category: "saas",
+      link: "/templates/live/saas-minimal-5",
     },
     {
       id: 6,
@@ -64,6 +70,7 @@ export default function Templates() {
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
       category: "agency",
+      link: "/templates/live/agency-clean-6",
     },
   ];
 
@@ -209,14 +216,12 @@ export default function Templates() {
                 </p>
 
                 {/* Action Button */}
-                <button
-                  className="w-full px-5 py-2.5 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-white text-base font-medium leading-[22px] tracking-[-0.18px] cursor-pointer"
-                  onClick={() =>
-                    console.log(`View template: ${template.title}`)
-                  }
+                <Link
+                  href={template.link}
+                  className="w-full px-5 py-2.5 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-white text-base font-medium leading-[22px] tracking-[-0.18px] cursor-pointer text-center"
                 >
                   View Template
-                </button>
+                </Link>
               </div>
             </div>
           ))}
