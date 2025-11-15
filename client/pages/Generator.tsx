@@ -6,7 +6,7 @@ export default function Generator() {
   const mainRef = useInView({ threshold: 0.2 });
   return (
     <div className="min-h-screen w-full bg-white pt-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 lg:py-12">
+      <div className={`container mx-auto px-4 sm:px-6 lg:px-16 py-8 lg:py-12 transition-all duration-1000 ${mainRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`} ref={mainRef.ref}>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-10">
           {/* Left Column - Input Section */}
           <div className="flex-1 flex flex-col gap-8">
