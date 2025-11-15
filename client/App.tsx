@@ -8,7 +8,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Generator from "./pages/Generator";
 import Templates from "./pages/Templates";
-import AIPageTemplate from "./pages/AIPageTemplate";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
@@ -49,7 +48,6 @@ export default function App() {
                 </>
               }
             />
-            <Route path="/aiPageTemplate" element={<AIPageTemplate />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route
               path="*"
