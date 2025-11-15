@@ -171,8 +171,8 @@ export default function Templates() {
       </div>
 
       {/* Templates Grid */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 lg:py-16" ref={gridRef.ref}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 transition-all duration-1000 ${gridRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
           {filteredTemplates.map((template) => (
             <div
               key={template.id}
