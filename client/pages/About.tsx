@@ -92,16 +92,16 @@ export default function About() {
       </section>
 
       {/* System Architecture Section */}
-      <section className="w-full bg-surface-2 py-12 md:py-16 lg:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="flex flex-col items-center gap-12 lg:gap-14">
+      <section className="w-full py-9 md:py-14">
+        <div className="container mx-auto px-4 md:px-16">
+          <div className="flex flex-col items-center justify-center gap-14">
             {/* Section Header */}
-            <div className="flex flex-col items-center gap-3 text-center max-w-2xl">
-              <h2 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight lg:tracking-[-0.2px]">
+            <div className="flex flex-col items-start gap-3 w-full">
+              <h2 className="text-[32px] font-semibold leading-[38px] tracking-[-0.2px] text-center w-full">
                 <span className="text-text-primary">System </span>
-                <span className="text-indigo-500">Architecture</span>
+                <span className="text-brand-primary">Architecture</span>
               </h2>
-              <p className="text-base sm:text-lg text-text-tertiary leading-relaxed lg:leading-7">
+              <p className="text-lg text-text-tertiary leading-7 text-center w-full">
                 A seamless pipeline from design to deployment
               </p>
             </div>
