@@ -55,6 +55,12 @@ export default function Navbar() {
             >
               AI Generator
             </Link>
+            <Link
+              to="/about"
+              className="text-zinc-700 text-base font-medium hover:text-indigo-500 transition-colors"
+            >
+              About
+            </Link>
             <a
               href="#pricing"
               className="text-zinc-700 text-base font-medium hover:text-indigo-500 transition-colors opacity-50 cursor-not-allowed"
@@ -130,6 +136,13 @@ export default function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 AI Generator
+              </Link>
+              <Link
+                to="/about"
+                className="px-4 py-3 text-zinc-700 text-base font-medium hover:bg-indigo-50 rounded-lg transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
               </Link>
               <a
                 href="#pricing"
