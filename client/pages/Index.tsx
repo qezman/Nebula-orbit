@@ -462,8 +462,8 @@ export default function Index() {
       </div>
 
       {/* Testimonial Section */}
-      <div className="w-full bg-gradient-to-br from-indigo-50/80 via-purple-50/40 to-indigo-50/80 py-12 sm:py-16 lg:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-16">
+      <div className="w-full bg-gradient-to-br from-indigo-50/80 via-purple-50/40 to-indigo-50/80 py-12 sm:py-16 lg:py-20" ref={testimonialsRef.ref}>
+        <div className={`container mx-auto px-4 sm:px-6 lg:px-16 transition-all duration-1000 ${testimonialsRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
           <div className="flex flex-col items-center justify-center gap-8 max-w-5xl mx-auto">
             {/* Quote with decorative icon */}
             <div className="relative">
