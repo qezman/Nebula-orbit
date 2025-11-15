@@ -5,6 +5,8 @@ import Footer from "../components/Footer";
 export default function Templates() {
   const [activeFilter, setActiveFilter] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
+  const heroRef = useInView({ threshold: 0.2 });
+  const gridRef = useInView({ threshold: 0.2 });
 
   const templates = [
     {
