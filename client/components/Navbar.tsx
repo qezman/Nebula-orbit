@@ -50,7 +50,7 @@ export default function Navbar() {
               Templates
             </Link>
             <Link
-              to="/aiPageTemplate"
+              to="/generator"
               className="text-zinc-700 text-base font-medium hover:text-indigo-500 transition-colors"
             >
               AI Generator
@@ -125,7 +125,7 @@ export default function Navbar() {
                 Templates
               </Link>
               <Link
-                to="/aiPageTemplate"
+                to="/generator"
                 className="px-4 py-3 text-zinc-700 text-base font-medium hover:bg-indigo-50 rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
