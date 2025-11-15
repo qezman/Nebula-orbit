@@ -316,8 +316,8 @@ export default function Index() {
       </div>
 
       {/* Premium Templates Section */}
-      <div className="w-full bg-gradient-to-br from-indigo-50/40 via-purple-50/20 to-indigo-50/40 py-12 sm:py-16 lg:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-16">
+      <div className="w-full bg-gradient-to-br from-indigo-50/40 via-purple-50/20 to-indigo-50/40 py-12 sm:py-16 lg:py-20" ref={templatesRef.ref}>
+        <div className={`container mx-auto px-4 sm:px-6 lg:px-16 transition-all duration-1000 ${templatesRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
           <div className="flex flex-col items-center gap-8 sm:gap-12">
             {/* Section Header */}
             <div className="flex flex-col items-center gap-3 text-center max-w-3xl">
