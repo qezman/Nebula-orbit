@@ -1,5 +1,3 @@
-import Footer from "../components/Footer";
-
 import { useInView } from "../hooks/useInView";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
