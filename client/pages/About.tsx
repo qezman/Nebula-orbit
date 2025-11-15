@@ -5,6 +5,10 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function About() {
+  const systemArchRef = useInView({ threshold: 0.2 });
+  const coreFeaturesRef = useInView({ threshold: 0.2 });
+  const builtWithRef = useInView({ threshold: 0.2 });
+
   return (
     <div className="min-h-screen w-full bg-white pt-20">
       {/* Hero Section - Full Height */}
