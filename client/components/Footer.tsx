@@ -140,7 +140,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#careers"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors cursor-not-allowed"
+                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors cursor-not-allowed opacity-50"
                 >
                   Careers
                 </a>
