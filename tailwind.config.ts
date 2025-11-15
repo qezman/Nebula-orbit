@@ -12,8 +12,76 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      primary: ["Inter", "-apple-system", "Roboto", "Helvetica", "sans-serif"],
+      sans: ["Inter", "-apple-system", "Roboto", "Helvetica", "sans-serif"],
+    },
+    fontWeight: {
+      thin: "100",
+      extralight: "200",
+      light: "300",
+      normal: "400",
+      medium: "500",
+      semibold: "600",
+      bold: "700",
+      extrabold: "800",
+      black: "900",
+    },
     extend: {
       colors: {
+        // Brand colors
+        "brand-primary": "#6366F1",
+        "brand-primary-light": "#A5B4FC",
+        "brand-primary-dark": "#4F46E0",
+        "brand-accent": "#F59E0B",
+        "brand-accent-light": "#FDE68A",
+        
+        // Status colors
+        success: "#22C55E",
+        warning: "#F59E0B",
+        danger: "#EF4444",
+        
+        // Gray scale (0-900)
+        gray: {
+          50: "#FAFAFA",
+          100: "#F4F4F5",
+          200: "#E4E4E7",
+          300: "#D4D4D8",
+          400: "#A1A1AA",
+          500: "#71717A",
+          600: "#52525B",
+          700: "#3F3F46",
+          800: "#27272A",
+          900: "#18181B",
+        },
+        
+        // Surface colors
+        surface: {
+          1: "#FFFFFF",
+          2: "#F8F9FB",
+          3: "#EEF1F5",
+        },
+        
+        // Text colors
+        "text-primary": "#18181B",
+        "text-secondary": "#3F3F46",
+        "text-tertiary": "#52525B",
+        "text-disabled": "#A1A1AA",
+        
+        // Button colors
+        "btn-primary": "#6366F1",
+        "btn-primary-hover": "#4F46E5",
+        "btn-primary-active": "#4338CA",
+        
+        // Accent colors
+        accent: {
+          default: "#7F9CF5",
+          onAccent: "#FFFFFF",
+          bg: "#C3DAFE",
+          subtle: "#A0AEC0",
+        },
+        
+        // Legacy colors (kept for compatibility)
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -59,10 +127,6 @@ export default {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -83,9 +147,11 @@ export default {
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        sm: "4px",
+        md: "8px",
+        lg: "12px",
+        xl: "16px",
+        full: "999px",
       },
       keyframes: {
         "accordion-down": {
