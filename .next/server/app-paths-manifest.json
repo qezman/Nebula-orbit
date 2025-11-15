@@ -1,6 +1,1 @@
-{
-  "/templates/page": "app/templates/page.js",
-  "/generator/page": "app/generator/page.js",
-  "/about/page": "app/about/page.js",
-  "/page": "app/page.js"
-}
+{}

@@ -1,9 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import { useInView } from "../hooks/useInView";
 import Footer from "../components/Footer";
 
 export default function Index() {
+  const featuresRef = useInView({ threshold: 0.2 });
+  const howItWorksRef = useInView({ threshold: 0.2 });
+  const templatesRef = useInView({ threshold: 0.2 });
+  const testimonialsRef = useInView({ threshold: 0.2 });
+  const ctaRef = useInView({ threshold: 0.2 });
+
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-indigo-50/50 via-purple-50/30 to-indigo-50/50 pt-20">
       {/* Hero Section */}
@@ -57,8 +64,8 @@ export default function Index() {
       </div>
 
       {/* Features Section */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 lg:py-20">
-        <div className="flex flex-col items-center gap-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 lg:py-20" ref={featuresRef.ref}>
+        <div className={`flex flex-col items-center gap-10 transition-all duration-1000 ${featuresRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
           {/* Section Header */}
           <div className="flex flex-col items-center gap-3 text-center max-w-3xl">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight">
@@ -74,7 +81,7 @@ export default function Index() {
           {/* Feature Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full">
             {/* Card 1: Figma-to-React Precision */}
-            <div className="flex flex-col gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex flex-col gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-slide-up" style={{ animationDelay: "0s" }}>
               <div className="w-16 h-16 rounded-lg bg-indigo-500 flex items-center justify-center flex-shrink-0">
                 <svg
                   width="31"
@@ -109,7 +116,7 @@ export default function Index() {
             </div>
 
             {/* Card 2: AI-Powered Layout Intelligence */}
-            <div className="flex flex-col gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex flex-col gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-slide-up" style={{ animationDelay: "0.1s" }}>
               <div className="w-16 h-16 rounded-lg bg-indigo-500 flex items-center justify-center flex-shrink-0">
                 <svg
                   width="31"
@@ -137,7 +144,7 @@ export default function Index() {
             </div>
 
             {/* Card 3: Design System Consistency */}
-            <div className="flex flex-col gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex flex-col gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-slide-up" style={{ animationDelay: "0.2s" }}>
               <div className="w-16 h-16 rounded-lg bg-indigo-500 flex items-center justify-center flex-shrink-0">
                 <svg
                   width="31"
@@ -170,8 +177,8 @@ export default function Index() {
       </div>
 
       {/* How It Works Section */}
-      <div className="w-full bg-gradient-to-br from-indigo-50/40 via-purple-50/20 to-indigo-50/40 py-12 lg:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-16">
+      <div className="w-full bg-gradient-to-br from-indigo-50/40 via-purple-50/20 to-indigo-50/40 py-12 lg:py-20" ref={howItWorksRef.ref}>
+        <div className={`container mx-auto px-4 sm:px-6 lg:px-16 transition-all duration-1000 ${howItWorksRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
           <div className="flex flex-col items-center gap-10">
             {/* Section Header */}
             <div className="flex flex-col items-center gap-3 text-center max-w-3xl">
@@ -311,8 +318,8 @@ export default function Index() {
       </div>
 
       {/* Premium Templates Section */}
-      <div className="w-full bg-gradient-to-br from-indigo-50/40 via-purple-50/20 to-indigo-50/40 py-12 sm:py-16 lg:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-16">
+      <div className="w-full bg-gradient-to-br from-indigo-50/40 via-purple-50/20 to-indigo-50/40 py-12 sm:py-16 lg:py-20" ref={templatesRef.ref}>
+        <div className={`container mx-auto px-4 sm:px-6 lg:px-16 transition-all duration-1000 ${templatesRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
           <div className="flex flex-col items-center gap-8 sm:gap-12">
             {/* Section Header */}
             <div className="flex flex-col items-center gap-3 text-center max-w-3xl">
@@ -457,8 +464,8 @@ export default function Index() {
       </div>
 
       {/* Testimonial Section */}
-      <div className="w-full bg-gradient-to-br from-indigo-50/80 via-purple-50/40 to-indigo-50/80 py-12 sm:py-16 lg:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-16">
+      <div className="w-full bg-gradient-to-br from-indigo-50/80 via-purple-50/40 to-indigo-50/80 py-12 sm:py-16 lg:py-20" ref={testimonialsRef.ref}>
+        <div className={`container mx-auto px-4 sm:px-6 lg:px-16 transition-all duration-1000 ${testimonialsRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
           <div className="flex flex-col items-center justify-center gap-8 max-w-5xl mx-auto">
             {/* Quote with decorative icon */}
             <div className="relative">
@@ -506,8 +513,8 @@ export default function Index() {
       </div>
 
       {/* CTA Section */}
-      <div className="w-full bg-white py-16 lg:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-16">
+      <div className="w-full bg-white py-16 lg:py-20" ref={ctaRef.ref}>
+        <div className={`container mx-auto px-4 sm:px-6 lg:px-16 transition-all duration-1000 ${ctaRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
           <div className="flex flex-col items-center justify-center gap-6 max-w-4xl mx-auto text-center">
             {/* Heading */}
             <div className="flex flex-col gap-2">

@@ -1,11 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useInView } from "../hooks/useInView";
 import Footer from "../components/Footer";
 
 export default function Templates() {
   const [activeFilter, setActiveFilter] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
+  const heroRef = useInView({ threshold: 0.2 });
+  const gridRef = useInView({ threshold: 0.2 });
 
   const templates = [
     {
@@ -76,8 +79,13 @@ export default function Templates() {
   return (
     <div className="min-h-screen w-full bg-white pt-20">
       {/* Header Section */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 lg:py-12">
-        <div className="flex flex-col items-center gap-2 text-center max-w-3xl mx-auto">
+      <div
+        className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 lg:py-12"
+        ref={heroRef.ref}
+      >
+        <div
+          className={`flex flex-col items-center gap-2 text-center max-w-3xl mx-auto transition-all duration-1000 ${heroRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
+        >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight">
             <span className="text-gray-900">Template </span>
             <span className="text-indigo-500">Marketplace</span>
@@ -170,8 +178,13 @@ export default function Templates() {
       </div>
 
       {/* Templates Grid */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      <div
+        className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 lg:py-16"
+        ref={gridRef.ref}
+      >
+        <div
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 transition-all duration-1000 ${gridRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
+        >
           {filteredTemplates.map((template) => (
             <div
               key={template.id}
@@ -195,23 +208,15 @@ export default function Templates() {
                   {template.description}
                 </p>
 
-                {/* Action Buttons */}
-                <div className="flex items-center gap-3 w-full">
-                  <button
-                    className="flex-1 px-4 py-2 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-sm font-medium cursor-pointer"
-                    onClick={() =>
-                      console.log(`View all templates for: ${template.title}`)
-                    }
-                  >
-                    All Templates
-                  </button>
-                  <button
-                    className="flex-1 px-4 py-2 border border-gray-400 hover:bg-gray-50 transition-colors rounded-lg text-zinc-700 text-sm font-medium cursor-pointer"
-                    onClick={() => console.log(`Preview: ${template.title}`)}
-                  >
-                    Preview
-                  </button>
-                </div>
+                {/* Action Button */}
+                <button
+                  className="w-full px-5 py-2.5 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-white text-base font-medium leading-[22px] tracking-[-0.18px] cursor-pointer"
+                  onClick={() =>
+                    console.log(`View template: ${template.title}`)
+                  }
+                >
+                  View Template
+                </button>
               </div>
             </div>
           ))}
