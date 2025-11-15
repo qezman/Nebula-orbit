@@ -35,12 +35,12 @@ export default {
         "brand-primary-dark": "#4F46E0",
         "brand-accent": "#F59E0B",
         "brand-accent-light": "#FDE68A",
-        
+
         // Status colors
         success: "#22C55E",
         warning: "#F59E0B",
         danger: "#EF4444",
-        
+
         // Gray scale (0-900)
         gray: {
           50: "#FAFAFA",
@@ -54,25 +54,25 @@ export default {
           800: "#27272A",
           900: "#18181B",
         },
-        
+
         // Surface colors
         surface: {
           1: "#FFFFFF",
           2: "#F8F9FB",
           3: "#EEF1F5",
         },
-        
+
         // Text colors
         "text-primary": "#18181B",
         "text-secondary": "#3F3F46",
         "text-tertiary": "#52525B",
         "text-disabled": "#A1A1AA",
-        
+
         // Button colors
         "btn-primary": "#6366F1",
         "btn-primary-hover": "#4F46E5",
         "btn-primary-active": "#4338CA",
-        
+
         // Accent colors
         accent: {
           default: "#7F9CF5",
@@ -80,7 +80,7 @@ export default {
           bg: "#C3DAFE",
           subtle: "#A0AEC0",
         },
-        
+
         // Legacy colors (kept for compatibility)
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
