@@ -62,8 +62,8 @@ export default function Index() {
       </div>
 
       {/* Features Section */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 lg:py-20">
-        <div className="flex flex-col items-center gap-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 lg:py-20" ref={featuresRef.ref}>
+        <div className={`flex flex-col items-center gap-10 transition-all duration-1000 ${featuresRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
           {/* Section Header */}
           <div className="flex flex-col items-center gap-3 text-center max-w-3xl">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight">
