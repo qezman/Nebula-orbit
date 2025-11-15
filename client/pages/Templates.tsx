@@ -196,23 +196,13 @@ export default function Templates() {
                   {template.description}
                 </p>
 
-                {/* Action Buttons */}
-                <div className="flex items-center gap-3 w-full">
-                  <button
-                    className="flex-1 px-4 py-2 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-sm font-medium cursor-pointer"
-                    onClick={() =>
-                      console.log(`View all templates for: ${template.title}`)
-                    }
-                  >
-                    All Templates
-                  </button>
-                  <button
-                    className="flex-1 px-4 py-2 border border-gray-400 hover:bg-gray-50 transition-colors rounded-lg text-zinc-700 text-sm font-medium cursor-pointer"
-                    onClick={() => console.log(`Preview: ${template.title}`)}
-                  >
-                    Preview
-                  </button>
-                </div>
+                {/* Action Button */}
+                <button
+                  className="w-full px-5 py-2.5 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-white text-base font-medium leading-[22px] tracking-[-0.18px] cursor-pointer"
+                  onClick={() => console.log(`View template: ${template.title}`)}
+                >
+                  View Template
+                </button>
               </div>
             </div>
           ))}
