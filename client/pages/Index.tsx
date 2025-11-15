@@ -72,7 +72,7 @@ export default function Index() {
           {/* Feature Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full">
             {/* Card 1: Figma-to-React Precision */}
-            <div className="flex flex-col gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex flex-col gap-6 p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-slide-up" style={{ animationDelay: "0s" }}>
               <div className="w-16 h-16 rounded-lg bg-indigo-500 flex items-center justify-center flex-shrink-0">
                 <svg
                   width="31"
