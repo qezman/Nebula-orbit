@@ -1,6 +1,9 @@
 import Footer from "../components/Footer";
 
+import { useInView } from "../hooks/useInView";
+
 export default function Generator() {
+  const mainRef = useInView({ threshold: 0.2 });
   return (
     <div className="min-h-screen w-full bg-white pt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 lg:py-12">
