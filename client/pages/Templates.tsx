@@ -77,8 +77,8 @@ export default function Templates() {
   return (
     <div className="min-h-screen w-full bg-white pt-20">
       {/* Header Section */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 lg:py-12">
-        <div className="flex flex-col items-center gap-2 text-center max-w-3xl mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8 lg:py-12" ref={heroRef.ref}>
+        <div className={`flex flex-col items-center gap-2 text-center max-w-3xl mx-auto transition-all duration-1000 ${heroRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight">
             <span className="text-gray-900">Template </span>
             <span className="text-indigo-500">Marketplace</span>
