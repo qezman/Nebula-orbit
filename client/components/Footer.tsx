@@ -131,7 +131,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               <li>
                 <a
-                  href="#about"
+                  href="/about"
                   className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
                 >
                   About
@@ -140,7 +140,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#careers"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors cursor-not-allowed"
                 >
                   Careers
                 </a>
@@ -148,7 +148,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#privacy"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors cursor-not-allowed"
                 >
                   Privacy
                 </a>
@@ -156,7 +156,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#terms"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors cursor-not-allowed"
                 >
                   Terms
                 </a>
