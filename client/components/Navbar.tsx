@@ -1,5 +1,7 @@
+"use client";
+
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +12,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link
-            to="/"
+            href="/"
             className="flex items-center gap-3 hover:opacity-80 transition-opacity flex-shrink-0"
             onClick={() => setIsMenuOpen(false)}
           >
@@ -44,19 +46,19 @@ export default function Navbar() {
           {/* Center Navigation Links - Hidden on Mobile and Tablet */}
           <div className="hidden lg:flex items-center gap-8 flex-1 justify-center">
             <Link
-              to="/templates"
+              href="/templates"
               className="text-zinc-700 text-base font-medium hover:text-indigo-500 transition-colors"
             >
               Templates
             </Link>
             <Link
-              to="/generator"
+              href="/generator"
               className="text-zinc-700 text-base font-medium hover:text-indigo-500 transition-colors"
             >
               AI Generator
             </Link>
             <Link
-              to="/about"
+              href="/about"
               className="text-zinc-700 text-base font-medium hover:text-indigo-500 transition-colors"
             >
               About
@@ -82,7 +84,7 @@ export default function Navbar() {
             {/* Desktop CTA Buttons */}
             <div className="hidden sm:flex items-center gap-3">
               <Link
-                to="/generator"
+                href="/generator"
                 className="px-4 sm:px-5 py-2 sm:py-3 text-indigo-500 text-sm sm:text-base font-semibold hover:text-indigo-600 transition-colors"
               >
                 Get Started
@@ -124,21 +126,21 @@ export default function Navbar() {
           <div className="lg:hidden border-t border-zinc-200/50 py-4 px-4 bg-white/50 backdrop-blur-md">
             <div className="flex flex-col gap-3">
               <Link
-                to="/templates"
+                href="/templates"
                 className="px-4 py-3 text-zinc-700 text-base font-medium hover:bg-indigo-50 rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Templates
               </Link>
               <Link
-                to="/generator"
+                href="/generator"
                 className="px-4 py-3 text-zinc-700 text-base font-medium hover:bg-indigo-50 rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 AI Generator
               </Link>
               <Link
-                to="/about"
+                href="/about"
                 className="px-4 py-3 text-zinc-700 text-base font-medium hover:bg-indigo-50 rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -162,7 +164,7 @@ export default function Navbar() {
               {/* Mobile CTA Buttons */}
               <div className="flex sm:hidden flex-col gap-2 mt-2 pt-2 border-t border-zinc-200/50">
                 <Link
-                  to="/generator"
+                  href="/generator"
                   className="px-4 py-3 text-indigo-500 text-base font-semibold hover:bg-indigo-50 rounded-lg transition-colors text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >

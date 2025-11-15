@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -47,7 +47,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
                 >
                   Features
@@ -55,7 +55,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/templates"
+                  href="/templates"
                   className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
                 >
                   Templates

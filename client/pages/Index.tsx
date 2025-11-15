@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import Footer from "../components/Footer";
 
 export default function Index() {
@@ -28,13 +30,13 @@ export default function Index() {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-start gap-3 w-full sm:w-auto">
               <Link
-                to="/generator"
+                href="/generator"
                 className="px-6 py-5 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-lg sm:text-xl font-semibold leading-tight cursor-pointer text-center"
               >
                 Start Creating
               </Link>
               <Link
-                to="/generator"
+                href="/generator"
                 className="px-6 py-5 border-2 border-indigo-500 hover:bg-indigo-50 transition-colors rounded-lg bg-transparent text-indigo-500 text-lg sm:text-xl font-semibold leading-tight cursor-pointer text-center"
               >
                 Explore Templates
@@ -521,7 +523,7 @@ export default function Index() {
 
             {/* CTA Button */}
             <Link
-              to="/generator"
+              href="/generator"
               className="inline-flex items-center justify-center px-8 py-4 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-lg font-semibold shadow-md hover:shadow-lg"
             >
               Get Started Free
