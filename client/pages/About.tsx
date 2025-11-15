@@ -323,8 +323,8 @@ export default function About() {
       </section>
 
       {/* Core Features Section */}
-      <section className="w-full py-9 md:py-14 bg-surface-2">
-        <div className="container mx-auto px-4 md:px-16">
+      <section className="w-full py-9 md:py-14 bg-surface-2" ref={coreFeaturesRef.ref}>
+        <div className={`container mx-auto px-4 md:px-16 transition-all duration-1000 ${coreFeaturesRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
           <div className="flex flex-col items-center gap-12">
             {/* Section Header */}
             <div className="flex flex-col items-start gap-3 w-full">
