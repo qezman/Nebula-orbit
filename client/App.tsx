@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Generator from "./pages/Generator";
 import Templates from "./pages/Templates";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
@@ -45,6 +46,15 @@ export default function App() {
                 <>
                   <Navbar />
                   <Templates />
+                </>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <>
+                  <Navbar />
+                  <About />
                 </>
               }
             />
