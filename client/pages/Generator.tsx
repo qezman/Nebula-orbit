@@ -61,7 +61,11 @@ export default function Generator() {
 
               {/* Generate Button */}
               <div className="flex justify-end">
-                <button className="px-8 py-5 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-zinc-50 text-xl font-semibold">
+                <button
+                  disabled
+                  title="This feature is coming soon"
+                  className="px-8 py-5 bg-indigo-500 rounded-lg text-zinc-50 text-xl font-semibold opacity-50 cursor-not-allowed"
+                >
                   Generate Page
                 </button>
               </div>
