@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useInView } from "../hooks/useInView";
 import Footer from "../components/Footer";
 
 export default function Templates() {
