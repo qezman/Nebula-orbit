@@ -1,5 +1,9 @@
 import Footer from "../components/Footer";
 
+import { useInView } from "../hooks/useInView";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 export default function About() {
   return (
     <div className="min-h-screen w-full bg-white pt-20">
