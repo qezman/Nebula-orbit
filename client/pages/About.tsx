@@ -227,6 +227,180 @@ export default function About() {
         </div>
       </section>
 
+      {/* Core Features Section */}
+      <section className="w-full py-9 md:py-14 bg-surface-2">
+        <div className="container mx-auto px-4 md:px-16">
+          <div className="flex flex-col items-center gap-12">
+            {/* Section Header */}
+            <div className="flex flex-col items-start gap-3 w-full">
+              <h2 className="text-[32px] font-semibold leading-[38px] tracking-[-0.2px] text-center w-full">
+                <span className="text-text-primary">Core </span>
+                <span className="text-brand-primary">Features</span>
+              </h2>
+              <p className="text-lg text-text-tertiary leading-7 text-center w-full">
+                A seamless pipeline from design to deployment
+              </p>
+            </div>
+
+            {/* Feature Cards */}
+            <div className="flex flex-col items-start gap-6 w-full">
+              {/* First Row */}
+              <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-[26px] w-full">
+                {/* Card 1: Design First */}
+                <div className="flex flex-col items-start gap-6 py-[22px] px-4 flex-1 rounded-lg border border-[#E5E7EB] bg-white transition-all duration-300 hover:shadow-lg hover:scale-105 animate-slide-up"
+                     style={{
+                       animationDelay: "0s",
+                       boxShadow: "0 2px 4px 0 rgba(140, 140, 140, 0.25), 0 4px 4px 0 rgba(138, 138, 138, 0.10)"
+                     }}>
+                  <div className="flex items-center justify-center w-[54px] h-[54px] p-[11.667px] rounded-sm bg-brand-primary">
+                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.3613 15.333C21.8529 15.333 21.3654 15.1311 21.006 14.7716C20.6465 14.4122 20.4446 13.9247 20.4446 13.4163C20.4446 12.908 20.6465 12.4205 21.006 12.0611C21.3654 11.7016 21.8529 11.4997 22.3613 11.4997C22.8696 11.4997 23.3571 11.7016 23.7166 12.0611C24.076 12.4205 24.2779 12.908 24.2779 13.4163C24.2779 13.9247 24.076 14.4122 23.7166 14.7716C23.3571 15.1311 22.8696 15.333 22.3613 15.333ZM18.5279 10.2219C18.0196 10.2219 17.5321 10.02 17.1727 9.66052C16.8132 9.30107 16.6113 8.81356 16.6113 8.30523C16.6113 7.7969 16.8132 7.30939 17.1727 6.94994C17.5321 6.5905 18.0196 6.38856 18.5279 6.38856C19.0363 6.38856 19.5238 6.5905 19.8832 6.94994C20.2427 7.30939 20.4446 7.7969 20.4446 8.30523C20.4446 8.81356 20.2427 9.30107 19.8832 9.66052C19.5238 10.02 19.0363 10.2219 18.5279 10.2219ZM12.1391 10.2219C11.6307 10.2219 11.1432 10.02 10.7838 9.66052C10.4243 9.30107 10.2224 8.81356 10.2224 8.30523C10.2224 7.7969 10.4243 7.30939 10.7838 6.94994C11.1432 6.5905 11.6307 6.38856 12.1391 6.38856C12.6474 6.38856 13.1349 6.5905 13.4943 6.94994C13.8538 7.30939 14.0557 7.7969 14.0557 8.30523C14.0557 8.81356 13.8538 9.30107 13.4943 9.66052C13.1349 10.02 12.6474 10.2219 12.1391 10.2219ZM8.30572 15.333C7.79739 15.333 7.30987 15.1311 6.95043 14.7716C6.59099 14.4122 6.38905 13.9247 6.38905 13.4163C6.38905 12.908 6.59099 12.4205 6.95043 12.0611C7.30987 11.7016 7.79739 11.4997 8.30572 11.4997C8.81405 11.4997 9.30156 11.7016 9.66101 12.0611C10.0205 12.4205 10.2224 12.908 10.2224 13.4163C10.2224 13.9247 10.0205 14.4122 9.66101 14.7716C9.30156 15.1311 8.81405 15.333 8.30572 15.333ZM15.3335 3.83301C12.2835 3.83301 9.35844 5.04461 7.20177 7.20128C5.0451 9.35795 3.8335 12.283 3.8335 15.333C3.8335 18.383 5.0451 21.3081 7.20177 23.4647C9.35844 25.6214 12.2835 26.833 15.3335 26.833C15.8418 26.833 16.3293 26.6311 16.6888 26.2716C17.0482 25.9122 17.2502 25.4247 17.2502 24.9163C17.2502 24.418 17.0585 23.9708 16.7518 23.6386C16.4579 23.2936 16.2663 22.8463 16.2663 22.3608C16.2663 21.8525 16.4682 21.3649 16.8277 21.0055C17.1871 20.6461 17.6746 20.4441 18.1829 20.4441H20.4446C22.139 20.4441 23.7641 19.771 24.9622 18.5729C26.1604 17.3747 26.8335 15.7497 26.8335 14.0552C26.8335 8.40745 21.6841 3.83301 15.3335 3.83301Z" fill="#FAFAFA"/>
+                    </svg>
+                  </div>
+                  <div className="flex flex-col items-start gap-4 w-full">
+                    <h3 className="text-xl font-medium text-text-secondary leading-6">
+                      Design First
+                    </h3>
+                    <p className="text-base text-text-tertiary leading-6">
+                      Every component begins with careful consideration of visual hierarchy, spacing, and user experience. We prioritize aesthetics without sacrificing functionality.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 2: Lightning Fast */}
+                <div className="flex flex-col items-start gap-6 py-[22px] px-4 flex-1 rounded-lg border border-[#E5E7EB] bg-white transition-all duration-300 hover:shadow-lg hover:scale-105 animate-slide-up"
+                     style={{
+                       animationDelay: "0.1s",
+                       boxShadow: "0 2px 4px 0 rgba(140, 140, 140, 0.25), 0 4px 4px 0 rgba(138, 138, 138, 0.10)"
+                     }}>
+                  <div className="flex items-center justify-center w-[54px] h-[54px] p-[11.667px] rounded-sm bg-brand-primary">
+                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23.6338 13.6833L12.5989 25.03C12.2923 25.3443 11.7837 24.9802 11.983 24.5892L15.9109 16.8382C15.9407 16.7797 15.9549 16.7145 15.9523 16.6489C15.9496 16.5834 15.9302 16.5196 15.8958 16.4637C15.8614 16.4078 15.8133 16.3616 15.756 16.3296C15.6987 16.2977 15.6341 16.2809 15.5685 16.2811H7.30636C7.2309 16.281 7.15713 16.2587 7.09431 16.2169C7.03148 16.1751 6.9824 16.1156 6.9532 16.0461C6.924 15.9765 6.91599 15.8998 6.93017 15.8257C6.94435 15.7516 6.98009 15.6833 7.03292 15.6294L17.2679 5.26023C17.5644 4.95995 18.0576 5.28962 17.8928 5.67934L14.9577 12.5985C14.9328 12.6572 14.923 12.7211 14.9291 12.7845C14.9351 12.8479 14.9569 12.9088 14.9924 12.9617C15.0279 13.0146 15.0761 13.0578 15.1325 13.0874C15.1889 13.1171 15.2518 13.1321 15.3155 13.1313L23.354 13.0317C23.4298 13.0305 23.5043 13.0518 23.5681 13.0929C23.6318 13.1341 23.6819 13.1932 23.712 13.2629C23.7421 13.3325 23.7509 13.4095 23.7372 13.4841C23.7235 13.5588 23.6879 13.6276 23.6351 13.6821" fill="#FAFAFA"/>
+                    </svg>
+                  </div>
+                  <div className="flex flex-col items-start gap-4 w-full">
+                    <h3 className="text-xl font-medium text-text-secondary leading-6">
+                      Lightning Fast
+                    </h3>
+                    <p className="text-base text-text-tertiary leading-6">
+                      Optimized for performance with modern build tools and best practices. Your users deserve instant feedback and seamless interactions at every touchpoint.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 3: Accessible */}
+                <div className="flex flex-col items-start gap-6 py-[22px] px-4 flex-1 rounded-lg border border-[#E5E7EB] bg-white transition-all duration-300 hover:shadow-lg hover:scale-105 animate-slide-up"
+                     style={{
+                       animationDelay: "0.2s",
+                       boxShadow: "0 2px 4px 0 rgba(140, 140, 140, 0.25), 0 4px 4px 0 rgba(138, 138, 138, 0.10)"
+                     }}>
+                  <div className="flex items-center justify-center w-[54px] h-[54px] p-[11.667px] rounded-sm bg-brand-primary">
+                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.7223 4.26775C23.6496 5.38051 25.2528 6.97731 26.3732 8.90008C27.4937 10.8228 28.0925 13.0049 28.1105 15.2302C28.1285 17.4556 27.5649 19.647 26.4757 21.5876C25.3864 23.5283 23.8093 25.1507 21.9003 26.2945C19.9912 27.4382 17.8166 28.0636 15.5917 28.1086C13.3667 28.1536 11.1686 27.6168 9.21487 26.5512C7.26116 25.4857 5.61961 23.9283 4.45274 22.0334C3.28587 20.1384 2.63413 17.9715 2.56205 15.7473L2.55566 15.3333L2.56205 14.9193C2.63361 12.7126 3.27575 10.562 4.42587 8.67735C5.57599 6.79267 7.19483 5.23816 9.12458 4.16538C11.0543 3.09259 13.2291 2.53814 15.4369 2.55609C17.6448 2.57403 19.8103 3.16375 21.7223 4.26775ZM20.3794 13.0129C20.2804 12.7158 20.0758 12.4655 19.8045 12.3093C19.5332 12.1532 19.2139 12.1021 18.9074 12.1657L18.763 12.204L15.3334 13.3476L11.9039 12.204L11.7595 12.1657C11.4532 12.1027 11.1345 12.1541 10.8636 12.3103C10.5928 12.4665 10.3886 12.7165 10.2897 13.0132C10.1908 13.3098 10.2041 13.6324 10.3271 13.9198C10.4501 14.2073 10.6742 14.4397 10.9571 14.573L11.0963 14.6292L14.0557 15.6144V16.8615L11.7148 20.3754L11.6381 20.5032C11.5086 20.7577 11.468 21.0482 11.5229 21.3285C11.5778 21.6087 11.725 21.8625 11.9409 22.0493L12.0687 22.1464L12.1978 22.2231C12.4523 22.3526 12.7428 22.3932 13.0231 22.3383C13.3033 22.2834 13.5571 22.1362 13.7439 21.9202L13.841 21.7925L15.3334 19.5538L16.8259 21.7925L16.9153 21.9113C17.1181 22.1503 17.4015 22.3064 17.7119 22.35C18.0222 22.3936 18.3377 22.3217 18.5985 22.1478C18.8592 21.974 19.047 21.7104 19.1261 21.4072C19.2052 21.104 19.1701 20.7822 19.0275 20.5032L18.9521 20.3754L16.6112 16.8615V15.6131L19.5706 14.628L19.7098 14.5717C19.9931 14.4388 20.2178 14.2065 20.3412 13.9189C20.4646 13.6314 20.4782 13.3085 20.3794 13.0116V13.0129ZM15.3334 7.66664C14.8251 7.66664 14.3376 7.86857 13.9782 8.22802C13.6187 8.58746 13.4168 9.07497 13.4168 9.5833C13.4168 10.0916 13.6187 10.5791 13.9782 10.9386C14.3376 11.298 14.8251 11.5 15.3334 11.5C15.8418 11.5 16.3293 11.298 16.6887 10.9386C17.0482 10.5791 17.2501 10.0916 17.2501 9.5833C17.2501 9.07497 17.0482 8.58746 16.6887 8.22802C16.3293 7.86857 15.8418 7.66664 15.3334 7.66664Z" fill="#FAFAFA"/>
+                    </svg>
+                  </div>
+                  <div className="flex flex-col items-start gap-4 w-full">
+                    <h3 className="text-xl font-medium text-text-secondary leading-6">
+                      Accessible
+                    </h3>
+                    <p className="text-base text-text-tertiary leading-6">
+                      Every component begins with careful consideration of visual hierarchy, spacing, and user experience. We prioritize aesthetics without sacrificing functionality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Second Row */}
+              <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-[26px] w-full">
+                {/* Card 4: Responsive */}
+                <div className="flex flex-col items-start gap-6 py-[22px] px-4 flex-1 rounded-lg border border-[#E5E7EB] bg-white transition-all duration-300 hover:shadow-lg hover:scale-105 animate-slide-up"
+                     style={{
+                       animationDelay: "0.3s",
+                       boxShadow: "0 2px 4px 0 rgba(140, 140, 140, 0.25), 0 4px 4px 0 rgba(138, 138, 138, 0.10)"
+                     }}>
+                  <div className="flex items-center justify-center w-[54px] h-[54px] p-[11.667px] rounded-sm bg-brand-primary">
+                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clipPath="url(#clip0_100_238)">
+                        <path d="M5.11111 7.66688V20.4447H11.5V15.3336C11.5 14.6558 11.7692 14.0058 12.2485 13.5265C12.7278 13.0472 13.3778 12.778 14.0556 12.778H20.4444C21.1222 12.778 21.7722 13.0472 22.2515 13.5265C22.7308 14.0058 23 14.6558 23 15.3336V20.4447H25.5556V7.66688H5.11111ZM0 25.5558V23.0002H5.11111C4.43334 23.0002 3.78332 22.731 3.30406 22.2517C2.8248 21.7725 2.55556 21.1224 2.55556 20.4447V7.66688C2.55556 6.98911 2.8248 6.33909 3.30406 5.85983C3.78332 5.38057 4.43334 5.11133 5.11111 5.11133H25.5556C26.2333 5.11133 26.8833 5.38057 27.3626 5.85983C27.8419 6.33909 28.1111 6.98911 28.1111 7.66688V20.4447C28.1111 21.1224 27.8419 21.7725 27.3626 22.2517C26.8833 22.731 26.2333 23.0002 25.5556 23.0002H30.6667V25.5558H23C23 26.2335 22.7308 26.8836 22.2515 27.3628C21.7722 27.8421 21.1222 28.1113 20.4444 28.1113H14.0556C13.3778 28.1113 12.7278 27.8421 12.2485 27.3628C11.7692 26.8836 11.5 26.2335 11.5 25.5558H0ZM14.6944 25.5558C14.525 25.5558 14.3625 25.6231 14.2427 25.7429C14.1229 25.8627 14.0556 26.0252 14.0556 26.1947C14.0556 26.3641 14.1229 26.5266 14.2427 26.6464C14.3625 26.7662 14.525 26.8336 14.6944 26.8336C14.8639 26.8336 15.0264 26.7662 15.1462 26.6464C15.266 26.5266 15.3333 26.3641 15.3333 26.1947C15.3333 26.0252 15.266 25.8627 15.1462 25.7429C15.0264 25.6231 14.8639 25.5558 14.6944 25.5558ZM19.8056 25.5558C19.6361 25.5558 19.4736 25.6231 19.3538 25.7429C19.234 25.8627 19.1667 26.0252 19.1667 26.1947C19.1667 26.3641 19.234 26.5266 19.3538 26.6464C19.4736 26.7662 19.6361 26.8336 19.8056 26.8336C19.975 26.8336 20.1375 26.7662 20.2573 26.6464C20.3771 26.5266 20.4444 26.3641 20.4444 26.1947C20.4444 26.0252 20.3771 25.8627 20.2573 25.7429C20.1375 25.6231 19.975 25.5558 19.8056 25.5558ZM16.6111 25.5558V26.8336H17.8889V25.5558H16.6111ZM14.0556 15.3336V24.278H20.4444V15.3336H14.0556Z" fill="#FAFAFA"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_100_238">
+                          <rect width="30.6667" height="30.6667" fill="white"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div className="flex flex-col items-start gap-4 w-full">
+                    <h3 className="text-xl font-medium text-text-secondary leading-6">
+                      Responsive
+                    </h3>
+                    <p className="text-base text-text-tertiary leading-6">
+                      Fluid layouts that adapt gracefully to any screen size. From mobile phones to ultra- wide displays, your content always looks intentional and polished.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 5: Modular */}
+                <div className="flex flex-col items-start gap-6 py-[22px] px-4 flex-1 rounded-lg border border-[#E5E7EB] bg-white transition-all duration-300 hover:shadow-lg hover:scale-105 animate-slide-up"
+                     style={{
+                       animationDelay: "0.4s",
+                       boxShadow: "0 2px 4px 0 rgba(140, 140, 140, 0.25), 0 4px 4px 0 rgba(138, 138, 138, 0.10)"
+                     }}>
+                  <div className="flex items-center justify-center w-[54px] h-[54px] p-[11.667px] rounded-sm bg-brand-primary">
+                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clipPath="url(#clip0_100_247)">
+                        <path fillRule="evenodd" clipRule="evenodd" d="M10.6895 0C10.1086 0 9.55142 0.230782 9.14062 0.641576C8.72983 1.05237 8.49905 1.60953 8.49905 2.19048V11.5C8.49905 12.081 8.72983 12.6381 9.14062 13.0489C9.55142 13.4597 10.1086 13.6905 10.6895 13.6905H19.999C20.58 13.6905 21.1372 13.4597 21.5479 13.0489C21.9587 12.6381 22.1895 12.081 22.1895 11.5V2.19048C22.1895 1.60953 21.9587 1.05237 21.5479 0.641576C21.1372 0.230782 20.58 0 19.999 0L10.6895 0ZM2.19048 16.9762C1.60953 16.9762 1.05237 17.207 0.641576 17.6178C0.230782 18.0286 0 18.5857 0 19.1667L0 28.4762C0 29.0571 0.230782 29.6143 0.641576 30.0251C1.05237 30.4359 1.60953 30.6667 2.19048 30.6667H11.5C12.081 30.6667 12.6381 30.4359 13.0489 30.0251C13.4597 29.6143 13.6905 29.0571 13.6905 28.4762V19.1667C13.6905 18.5857 13.4597 18.0286 13.0489 17.6178C12.6381 17.207 12.081 16.9762 11.5 16.9762H2.19048ZM16.9762 19.1667C16.9762 18.5857 17.207 18.0286 17.6178 17.6178C18.0286 17.207 18.5857 16.9762 19.1667 16.9762H28.4762C29.0571 16.9762 29.6143 17.207 30.0251 17.6178C30.4359 18.0286 30.6667 18.5857 30.6667 19.1667V28.4762C30.6667 29.0571 30.4359 29.6143 30.0251 30.0251C29.6143 30.4359 29.0571 30.6667 28.4762 30.6667H19.1667C18.5857 30.6667 18.0286 30.4359 17.6178 30.0251C17.207 29.6143 16.9762 29.0571 16.9762 28.4762V19.1667Z" fill="#FAFAFA"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_100_247">
+                          <rect width="30.6667" height="30.6667" fill="white"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div className="flex flex-col items-start gap-4 w-full">
+                    <h3 className="text-xl font-medium text-text-secondary leading-6">
+                      Modular
+                    </h3>
+                    <p className="text-base text-text-tertiary leading-6">
+                      Component-based architecture allows for easy customization and extension. Build once, reuse everywhere, and maintain consistency across your entire system.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Card 6: Crafted */}
+                <div className="flex flex-col items-start gap-6 py-[22px] px-4 flex-1 rounded-lg border border-[#E5E7EB] bg-white transition-all duration-300 hover:shadow-lg hover:scale-105 animate-slide-up"
+                     style={{
+                       animationDelay: "0.5s",
+                       boxShadow: "0 2px 4px 0 rgba(140, 140, 140, 0.25), 0 4px 4px 0 rgba(138, 138, 138, 0.10)"
+                     }}>
+                  <div className="flex items-center justify-center w-[54px] h-[54px] p-[11.667px] rounded-sm bg-brand-primary">
+                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clipPath="url(#clip0_100_256)">
+                        <path d="M15.0382 0.0839844L0.0856111 29.6518L16.3901 15.7968L15.0382 0.0839844ZM29.6534 30.582L9.54628 22.4719L0 30.582H29.6534ZM30.6667 30.329L15.7141 0.591262L17.9106 25.1757L30.6667 30.329ZM16.4744 16.5584L10.0536 22.0503L17.2347 24.9227L16.4744 16.5584Z" fill="#FAFAFA"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_100_256">
+                          <rect width="30.6667" height="30.6667" fill="white"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div className="flex flex-col items-start gap-4 w-full">
+                    <h3 className="text-xl font-medium text-text-secondary leading-6">
+                      Crafted
+                    </h3>
+                    <p className="text-base text-text-tertiary leading-6">
+                      Hand-tuned details and thoughtful micro-interactions create delightful experiences. We sweat the small stuff so you don't have to worry about the details.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <Footer />
     </div>
