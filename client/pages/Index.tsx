@@ -3,6 +3,12 @@ import { useInView } from "../hooks/useInView";
 import Footer from "../components/Footer";
 
 export default function Index() {
+  const featuresRef = useInView({ threshold: 0.2 });
+  const howItWorksRef = useInView({ threshold: 0.2 });
+  const templatesRef = useInView({ threshold: 0.2 });
+  const testimonialsRef = useInView({ threshold: 0.2 });
+  const ctaRef = useInView({ threshold: 0.2 });
+
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-indigo-50/50 via-purple-50/30 to-indigo-50/50 pt-20">
       {/* Hero Section */}
