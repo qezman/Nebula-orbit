@@ -210,7 +210,7 @@ export default function Templates() {
 
                 {/* Action Button */}
                 <button
-                  className="w-full px-5 py-2.5 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-sm text-white text-base font-medium leading-[22px] tracking-[-0.18px] cursor-pointer"
+                  className="w-full px-5 py-2.5 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-md text-white text-base font-medium leading-[22px] tracking-[-0.18px] cursor-pointer"
                   onClick={() =>
                     console.log(`View template: ${template.title}`)
                   }
