@@ -128,21 +128,21 @@ export default function Navbar() {
             <div className="flex flex-col gap-3">
               <Link
                 to="/templates"
-                className="px-4 py-3 text-zinc-700 text-base font-medium hover:bg-indigo-50 rounded-lg transition-colors"
+                className={`px-4 py-3 text-base font-medium rounded-lg transition-colors ${isActive("/templates") ? "text-indigo-500 bg-indigo-50 font-semibold" : "text-zinc-700 hover:bg-indigo-50 hover:text-indigo-500"}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Templates
               </Link>
               <Link
                 to="/generator"
-                className="px-4 py-3 text-zinc-700 text-base font-medium hover:bg-indigo-50 rounded-lg transition-colors"
+                className={`px-4 py-3 text-base font-medium rounded-lg transition-colors ${isActive("/generator") ? "text-indigo-500 bg-indigo-50 font-semibold" : "text-zinc-700 hover:bg-indigo-50 hover:text-indigo-500"}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 AI Generator
               </Link>
               <Link
                 to="/about"
-                className="px-4 py-3 text-zinc-700 text-base font-medium hover:bg-indigo-50 rounded-lg transition-colors"
+                className={`px-4 py-3 text-base font-medium rounded-lg transition-colors ${isActive("/about") ? "text-indigo-500 bg-indigo-50 font-semibold" : "text-zinc-700 hover:bg-indigo-50 hover:text-indigo-500"}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
