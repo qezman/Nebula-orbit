@@ -171,7 +171,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-zinc-700">
-            © 2025 Nebula. All rights reserved.
+            © {new Date().getFullYear()} Nebula. All rights reserved.
           </p>
 
           {/* Social Icons */}

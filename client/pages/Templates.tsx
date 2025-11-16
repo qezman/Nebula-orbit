@@ -195,10 +195,10 @@ export default function Templates() {
           {filteredTemplates.map((template) => (
             <div
               key={template.id}
-              className="flex flex-col gap-4 bg-white/10 rounded-lg border border-gray-200 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 overflow-hidden"
+              className="flex flex-col gap-4 bg-white/10 rounded-sm border border-gray-200 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 overflow-hidden"
             >
               {/* Template Image */}
-              <div className="w-full h-56 overflow-hidden rounded-t-lg">
+              <div className="w-full h-56 overflow-hidden rounded-t-sm">
                 <img
                   src={template.image}
                   alt={template.title}
@@ -207,13 +207,15 @@ export default function Templates() {
               </div>
 
               {/* Template Info */}
-              <div className="flex flex-col gap-4 px-4 pb-4">
-                <h3 className="text-2xl font-semibold text-gray-900 leading-tight tracking-tight">
-                  {template.title}
-                </h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  {template.description}
-                </p>
+              <div className="flex flex-col gap-4 px-4 pb-4 flex-1 justify-between">
+                <div>
+                  <h3 className="text-2xl font-semibold text-gray-900 leading-tight tracking-tight">
+                    {template.title}
+                  </h3>
+                  <p className="text-base text-gray-600 leading-relaxed mt-2">
+                    {template.description}
+                  </p>
+                </div>
 
                 {/* Action Button */}
                 <Link
@@ -228,7 +230,7 @@ export default function Templates() {
         </div>
 
         {/* Load More Button */}
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-center mt-16">
           <button
             className="px-8 py-3 border border-gray-400 hover:bg-gray-50 transition-colors rounded-lg text-zinc-700 text-lg font-medium cursor-pointer"
             onClick={() => console.log("Loading more templates...")}
