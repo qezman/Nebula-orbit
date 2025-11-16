@@ -200,7 +200,7 @@ export default function Templates() {
               {/* Template Info */}
               <div className="flex flex-col gap-4 px-4 pb-4 flex-1 justify-between">
                 <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 leading-tight tracking-tight">
+                  <h3 className="text-xl font-semibold text-gray-900 leading-tight tracking-tight">
                     {template.title}
                   </h3>
                   <p className="text-base text-gray-600 leading-relaxed mt-2">
