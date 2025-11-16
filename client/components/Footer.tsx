@@ -134,12 +134,12 @@ export default function Footer() {
             <h3 className="text-base font-semibold text-zinc-900">Company</h3>
             <ul className="flex flex-col gap-3">
               <li>
-                <a
-                  href="/about"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                <Link
+                  to="/about"
+                  className={`text-base transition-colors ${isActive("/about") ? "text-indigo-500 font-semibold" : "text-zinc-700 hover:text-indigo-500"}`}
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <a
