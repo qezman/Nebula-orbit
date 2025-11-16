@@ -334,25 +334,25 @@ export default function Index() {
             {/* Template Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 w-full">
               {/* Template 1: SaaS Pro */}
-              <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
-                <div className="w-full overflow-hidden rounded-t-lg">
+              <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-sm border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                <div className="w-full overflow-hidden rounded-t-sm">
                   <img
                     src="https://api.builder.io/api/v1/image/assets/TEMP/f16ef7f0c90d8b1a4c767de14128943544dbb70d?width=680"
                     alt="SaaS Pro Template Preview"
-                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
-                <div className="flex flex-col gap-4 px-4 pb-4">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 leading-tight tracking-tight">
+                <div className="flex flex-col gap-4 px-3 pb-4">
+                  <h3 className="text-xl font-medium text-gray-900 leading-6">
                     SaaS Pro
                   </h3>
-                  <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                  <p className="text-lg text-gray-600 leading-7">
                     Perfect for B2B SaaS products with conversion-focused
                     sections
                   </p>
                   <a
                     href="#"
-                    className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors group"
+                    className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors leading-5 tracking-tight"
                   >
                     <span>View Template</span>
                     <svg
@@ -361,11 +361,11 @@ export default function Index() {
                       viewBox="0 0 24 24"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                      className="w-6 h-6"
                     >
                       <path
                         d="M4 12H20M20 12L14 18M20 12L14 6"
-                        stroke="currentColor"
+                        stroke="#4338CA"
                         strokeWidth="1.5"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -376,24 +376,24 @@ export default function Index() {
               </div>
 
               {/* Template 2: Minimal Agency */}
-              <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
-                <div className="w-full overflow-hidden rounded-t-lg">
+              <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-sm border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                <div className="w-full overflow-hidden rounded-t-sm">
                   <img
                     src="https://api.builder.io/api/v1/image/assets/TEMP/036abc6f6b263337a4e295d8dfc1147d488bfd39?width=680"
                     alt="Minimal Agency Template Preview"
-                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
-                <div className="flex flex-col gap-4 px-4 pb-4">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 leading-tight tracking-tight">
+                <div className="flex flex-col gap-4 px-3 pb-4">
+                  <h3 className="text-xl font-medium text-gray-900 leading-6">
                     Minimal Agency
                   </h3>
-                  <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                  <p className="text-lg text-gray-600 leading-7">
                     Elegant design for creative agencies and design studios
                   </p>
                   <a
                     href="#"
-                    className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors group"
+                    className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors leading-5 tracking-tight"
                   >
                     <span>View Template</span>
                     <svg
@@ -402,11 +402,11 @@ export default function Index() {
                       viewBox="0 0 24 24"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                      className="w-6 h-6"
                     >
                       <path
                         d="M4 12H20M20 12L14 18M20 12L14 6"
-                        stroke="currentColor"
+                        stroke="#4338CA"
                         strokeWidth="1.5"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -417,24 +417,24 @@ export default function Index() {
               </div>
 
               {/* Template 3: Startup Hero */}
-              <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
-                <div className="w-full overflow-hidden rounded-t-lg">
+              <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-sm border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                <div className="w-full overflow-hidden rounded-t-sm">
                   <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/881a7e8cde5534b053a58a9a962ad84a72a0f1c9?width=680"
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/ab8faff0a41e9a58dc93059d2084b43ac3c54126?width=680"
                     alt="Startup Hero Template Preview"
-                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
-                <div className="flex flex-col gap-4 px-4 pb-4">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 leading-tight tracking-tight">
+                <div className="flex flex-col gap-4 px-3 pb-4">
+                  <h3 className="text-xl font-medium text-gray-900 leading-6">
                     Startup Hero
                   </h3>
-                  <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                  <p className="text-lg text-gray-600 leading-7">
                     Bold and energetic design for tech startups and innovations
                   </p>
                   <a
                     href="#"
-                    className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors group"
+                    className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors leading-5 tracking-tight"
                   >
                     <span>View Template</span>
                     <svg
