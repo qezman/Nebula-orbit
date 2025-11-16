@@ -1,6 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Footer() {
+  const location = useLocation();
+
+  const isActive = (path: string) => location.pathname === path;
+
   return (
     <footer className="w-full bg-white border-t border-gray-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 sm:py-16 lg:py-20">
@@ -48,7 +52,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className={`text-base transition-colors ${isActive("/") ? "text-indigo-500 font-semibold" : "text-zinc-700 hover:text-indigo-500"}`}
                 >
                   Features
                 </Link>
@@ -56,7 +60,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/templates"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className={`text-base transition-colors ${isActive("/templates") ? "text-indigo-500 font-semibold" : "text-zinc-700 hover:text-indigo-500"}`}
                 >
                   Templates
                 </Link>
@@ -130,12 +134,12 @@ export default function Footer() {
             <h3 className="text-base font-semibold text-zinc-900">Company</h3>
             <ul className="flex flex-col gap-3">
               <li>
-                <a
-                  href="/about"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                <Link
+                  to="/about"
+                  className={`text-base transition-colors ${isActive("/about") ? "text-indigo-500 font-semibold" : "text-zinc-700 hover:text-indigo-500"}`}
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <a

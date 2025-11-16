@@ -1,8 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-zinc-200/50">
@@ -45,19 +48,19 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-8 flex-1 justify-center">
             <Link
               to="/templates"
-              className="text-zinc-700 text-base font-medium hover:text-indigo-500 transition-colors"
+              className={`text-base font-medium transition-colors ${isActive("/templates") ? "text-indigo-500 font-semibold" : "text-zinc-700 hover:text-indigo-500"}`}
             >
               Templates
             </Link>
             <Link
               to="/generator"
-              className="text-zinc-700 text-base font-medium hover:text-indigo-500 transition-colors"
+              className={`text-base font-medium transition-colors ${isActive("/generator") ? "text-indigo-500 font-semibold" : "text-zinc-700 hover:text-indigo-500"}`}
             >
               AI Generator
             </Link>
             <Link
               to="/about"
-              className="text-zinc-700 text-base font-medium hover:text-indigo-500 transition-colors"
+              className={`text-base font-medium transition-colors ${isActive("/about") ? "text-indigo-500 font-semibold" : "text-zinc-700 hover:text-indigo-500"}`}
             >
               About
             </Link>
@@ -125,21 +128,21 @@ export default function Navbar() {
             <div className="flex flex-col gap-3">
               <Link
                 to="/templates"
-                className="px-4 py-3 text-zinc-700 text-base font-medium hover:bg-indigo-50 rounded-lg transition-colors"
+                className={`px-4 py-3 text-base font-medium rounded-lg transition-colors ${isActive("/templates") ? "text-indigo-500 bg-indigo-50 font-semibold" : "text-zinc-700 hover:bg-indigo-50 hover:text-indigo-500"}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Templates
               </Link>
               <Link
                 to="/generator"
-                className="px-4 py-3 text-zinc-700 text-base font-medium hover:bg-indigo-50 rounded-lg transition-colors"
+                className={`px-4 py-3 text-base font-medium rounded-lg transition-colors ${isActive("/generator") ? "text-indigo-500 bg-indigo-50 font-semibold" : "text-zinc-700 hover:bg-indigo-50 hover:text-indigo-500"}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 AI Generator
               </Link>
               <Link
                 to="/about"
-                className="px-4 py-3 text-zinc-700 text-base font-medium hover:bg-indigo-50 rounded-lg transition-colors"
+                className={`px-4 py-3 text-base font-medium rounded-lg transition-colors ${isActive("/about") ? "text-indigo-500 bg-indigo-50 font-semibold" : "text-zinc-700 hover:bg-indigo-50 hover:text-indigo-500"}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
