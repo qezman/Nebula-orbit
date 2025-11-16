@@ -5,8 +5,18 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 lg:py-20">
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16">
-        {/* Left Content */}
+      <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-12 lg:gap-16">
+        {/* Image (should appear first on mobile) */}
+        <div className="flex-shrink-0 w-full lg:w-auto max-w-md lg:max-w-lg xl:max-w-xl">
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/253344f356df28d3949e5beffcf4c03a2838b1dd?width=1092"
+            alt="Landing page preview on laptop"
+            loading="lazy"
+            className="w-full h-auto rounded-xl object-cover shadow-lg"
+          />
+        </div>
+
+        {/* Text content */}
         <div className="flex flex-col justify-center items-start gap-8 flex-1 max-w-2xl">
           {/* Headline and Description */}
           <div className="flex flex-col items-start gap-3 w-full">
@@ -39,16 +49,6 @@ export default function HeroSection() {
               Explore Templates
             </Link>
           </div>
-        </div>
-
-        {/* Right Image */}
-        <div className="flex-shrink-0 w-full lg:w-auto max-w-md lg:max-w-lg xl:max-w-xl">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/253344f356df28d3949e5beffcf4c03a2838b1dd?width=1092"
-            alt="Landing page preview on laptop"
-            loading="lazy"
-            className="w-full h-auto rounded-xl object-cover shadow-lg"
-          />
         </div>
       </div>
     </div>
