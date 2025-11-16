@@ -1,6 +1,13 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  const isActive = (path: string) => pathname === path;
+
   return (
     <footer className="w-full bg-white border-t border-gray-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-12 sm:py-16 lg:py-20">
@@ -48,7 +55,11 @@ export default function Footer() {
               <li>
                 <Link
                   href="/"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className={`text-base transition-colors ${
+                    isActive("/")
+                      ? "text-indigo-500 font-semibold"
+                      : "text-zinc-700 hover:text-indigo-500"
+                  }`}
                 >
                   Features
                 </Link>
@@ -56,7 +67,11 @@ export default function Footer() {
               <li>
                 <Link
                   href="/templates"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className={`text-base transition-colors ${
+                    isActive("/templates")
+                      ? "text-indigo-500 font-semibold"
+                      : "text-zinc-700 hover:text-indigo-500"
+                  }`}
                 >
                   Templates
                 </Link>
@@ -130,12 +145,16 @@ export default function Footer() {
             <h3 className="text-base font-semibold text-zinc-900">Company</h3>
             <ul className="flex flex-col gap-3">
               <li>
-                <a
+                <Link
                   href="/about"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className={`text-base transition-colors ${
+                    isActive("/about")
+                      ? "text-indigo-500 font-semibold"
+                      : "text-zinc-700 hover:text-indigo-500"
+                  }`}
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <a

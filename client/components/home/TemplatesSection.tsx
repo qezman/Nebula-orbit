@@ -33,7 +33,7 @@ export default function TemplatesSection() {
             <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
               <div className="w-full overflow-hidden rounded-t-lg">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/f16ef7f0c90d8b1a4c767de14128943544dbb70d?width=680"
+                  src="/assets/Horizon.png"
                   alt="SaaS Pro Template Preview"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -46,7 +46,9 @@ export default function TemplatesSection() {
                   Perfect for B2B SaaS products with conversion-focused sections
                 </p>
                 <Link
-                  href="/templates/saas-pro-live"
+                  href="https://authentic-designers-123357.framer.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors group"
                 >
                   <span>View Template</span>
@@ -74,7 +76,7 @@ export default function TemplatesSection() {
             <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
               <div className="w-full overflow-hidden rounded-t-lg">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/036abc6f6b263337a4e295d8dfc1147d488bfd39?width=680"
+                  src="/assets/Lynqson.png"
                   alt="Minimal Agency Template Preview"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -87,7 +89,9 @@ export default function TemplatesSection() {
                   Elegant design for creative agencies and design studios
                 </p>
                 <Link
-                  href="/templates/minimal-agency-live"
+                  href="https://internal-three-386561.framer.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors group"
                 >
                   <span>View Template</span>
@@ -115,7 +119,7 @@ export default function TemplatesSection() {
             <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
               <div className="w-full overflow-hidden rounded-t-lg">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/881a7e8cde5534b053a58a9a962ad84a72a0f1c9?width=680"
+                  src="/assets/Fizens.png"
                   alt="Startup Hero Template Preview"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -128,7 +132,9 @@ export default function TemplatesSection() {
                   Bold and energetic design for tech startups and innovations
                 </p>
                 <Link
-                  href="/templates/startup-hero-live"
+                  href="https://contextual-use-196378.framer.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors group"
                 >
                   <span>View Template</span>

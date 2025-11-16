@@ -16,61 +16,55 @@ export default function Templates() {
       id: 1,
       title: "SaaS Classic",
       description:
-        "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
+        "A timeless SaaS template with hero, features, pricing, and testimonials sections. Light and dark mode support.",
+      image: "/assets/Horizon.png",
       category: "saas",
-      link: "/templates/live/saas-classic-1",
+      link: "https://authentic-designers-123357.framer.app/",
     },
     {
       id: 2,
       title: "SaaS Minimal",
       description:
         "Ultra-clean minimalist design focusing on clarity and user experience.",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/8b406baed77d318c68f96b7e5bb37e76f196668b?width=924",
+      image: "/assets/Lynqson.png",
       category: "saas",
-      link: "/templates/live/saas-minimal-2",
+      link: "https://internal-three-386561.framer.app/",
     },
     {
       id: 3,
       title: "Currency Exchange",
       description:
         "Perfect for creative agencies showcasing their work with style and elegance.",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/0805bfb64fc2b934b7d0a64cf5859c84cb043b3d?width=892",
-      category: "agency",
-      link: "/templates/live/currency-exchange-3",
+      image: "/assets/Currency.png",
+      category: "startup",
+      link: "https://sincere-trip-685573.framer.app/",
     },
     {
       id: 4,
       title: "SaaS Classic",
       description:
         "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
+      image: "/assets/Alytics.png",
       category: "saas",
-      link: "/templates/live/saas-classic-4",
+      link: "https://gold-square-442081.framer.app/",
     },
     {
       id: 5,
       title: "SaaS Minimal",
       description:
         "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/8b406baed77d318c68f96b7e5bb37e76f196668b?width=924",
+      image: "/assets/Saaasta.png",
       category: "saas",
-      link: "/templates/live/saas-minimal-5",
+      link: "https://tedious-help-312142.framer.app/",
     },
     {
       id: 6,
       title: "Agency Clean",
       description:
         "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
+      image: "/assets/Fizens.png",
       category: "agency",
-      link: "/templates/live/agency-clean-6",
+      link: "https://contextual-use-196378.framer.app/",
     },
   ];
 
@@ -220,6 +214,8 @@ export default function Templates() {
                 {/* Action Button */}
                 <Link
                   href={template.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full px-5 py-2.5 bg-indigo-500 hover:bg-indigo-600 transition-colors rounded-lg text-white text-base font-medium leading-[22px] tracking-[-0.18px] cursor-pointer text-center"
                 >
                   View Template
