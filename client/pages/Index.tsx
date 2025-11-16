@@ -103,7 +103,7 @@ export default function Index() {
                 </svg>
               </div>
               <div className="flex flex-col gap-4">
-                <h3 className="text-xl sm:text-2xl font-semibold text-zinc-900 leading-tight tracking-tight">
+                <h3 className="text-xl font-semibold text-zinc-900 leading-tight tracking-tight">
                   Figma-to-React Precision
                 </h3>
                 <p className="text-base sm:text-lg text-zinc-700 leading-relaxed">
@@ -131,7 +131,7 @@ export default function Index() {
                 </svg>
               </div>
               <div className="flex flex-col gap-4">
-                <h3 className="text-xl sm:text-2xl font-semibold text-zinc-900 leading-tight tracking-tight">
+                <h3 className="text-xl font-semibold text-zinc-900 leading-tight tracking-tight">
                   AI-Powered Layout Intelligence
                 </h3>
                 <p className="text-base sm:text-lg text-zinc-700 leading-relaxed">
@@ -161,7 +161,7 @@ export default function Index() {
                 </svg>
               </div>
               <div className="flex flex-col gap-4">
-                <h3 className="text-xl sm:text-2xl font-semibold text-zinc-900 leading-tight tracking-tight">
+                <h3 className="text-xl font-semibold text-zinc-900 leading-tight tracking-tight">
                   Design System Consistency
                 </h3>
                 <p className="text-base sm:text-lg text-zinc-700 leading-relaxed">
