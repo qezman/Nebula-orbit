@@ -11,7 +11,7 @@ export default function Templates() {
   const templates = [
     {
       id: 1,
-      title: "SaaS Classic",
+      title: "Horizon Analytics",
       description:
         "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
       image:
@@ -20,7 +20,7 @@ export default function Templates() {
     },
     {
       id: 2,
-      title: "SaaS Minimal",
+      title: "Lynqson Minimal",
       description:
         "Ultra-clean minimalist design focusing on clarity and user experience.",
       image:
@@ -38,30 +38,30 @@ export default function Templates() {
     },
     {
       id: 4,
-      title: "SaaS Classic",
+      title: "Analytics",
       description:
         "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
+        "https://api.builder.io/api/v1/image/assets/TEMP/194b966bf2fa7ed3447fae8769e08e80908aa5bd?width=936",
       category: "saas",
     },
     {
       id: 5,
-      title: "SaaS Minimal",
+      title: "Saaasta",
       description:
         "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/8b406baed77d318c68f96b7e5bb37e76f196668b?width=924",
+        "https://api.builder.io/api/v1/image/assets/TEMP/efc5f4d06a62fa0b9fc83ba79ed8d18124860c6b?width=924",
       category: "saas",
     },
     {
       id: 6,
-      title: "Agency Clean",
+      title: "Fizens",
       description:
         "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/320d0456e2a772bd11bcefa820d14dacce16c4aa?width=936",
-      category: "agency",
+        "https://api.builder.io/api/v1/image/assets/TEMP/7e8eb76f3ba47e3a7528bd0615aadfe62acb05b6?width=936",
+      category: "startup",
     },
   ];
 
@@ -200,7 +200,7 @@ export default function Templates() {
               {/* Template Info */}
               <div className="flex flex-col gap-4 px-4 pb-4 flex-1 justify-between">
                 <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 leading-tight tracking-tight">
+                  <h3 className="text-xl font-semibold text-gray-900 leading-tight tracking-tight">
                     {template.title}
                   </h3>
                   <p className="text-base text-gray-600 leading-relaxed mt-2">
