@@ -52,7 +52,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className={`text-base transition-colors ${isActive("/") ? "text-indigo-500 font-semibold" : "text-zinc-700 hover:text-indigo-500"}`}
                 >
                   Features
                 </Link>
@@ -60,7 +60,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/templates"
-                  className="text-base text-zinc-700 hover:text-indigo-500 transition-colors"
+                  className={`text-base transition-colors ${isActive("/templates") ? "text-indigo-500 font-semibold" : "text-zinc-700 hover:text-indigo-500"}`}
                 >
                   Templates
                 </Link>
