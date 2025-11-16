@@ -223,7 +223,7 @@ export default function Templates() {
         </div>
 
         {/* Load More Button */}
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-center mt-16">
           <button
             className="px-8 py-3 border border-gray-400 hover:bg-gray-50 transition-colors rounded-lg text-zinc-700 text-lg font-medium cursor-pointer"
             onClick={() => console.log("Loading more templates...")}
