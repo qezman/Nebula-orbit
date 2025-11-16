@@ -334,7 +334,7 @@ export default function Index() {
             {/* Template Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 w-full">
               {/* Template 1: SaaS Pro */}
-              <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-sm border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden animate-slide-up" style={{ animationDelay: "0s" }}>
+              <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-sm border border-gray-200 shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 overflow-hidden animate-slide-up" style={{ animationDelay: "0s" }}>
                 <div className="w-full overflow-hidden rounded-t-sm">
                   <img
                     src="https://api.builder.io/api/v1/image/assets/TEMP/f16ef7f0c90d8b1a4c767de14128943544dbb70d?width=680"
@@ -376,7 +376,7 @@ export default function Index() {
               </div>
 
               {/* Template 2: Minimal Agency */}
-              <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-sm border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden animate-slide-up" style={{ animationDelay: "0.1s" }}>
+              <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-sm border border-gray-200 shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 overflow-hidden animate-slide-up" style={{ animationDelay: "0.1s" }}>
                 <div className="w-full overflow-hidden rounded-t-sm">
                   <img
                     src="https://api.builder.io/api/v1/image/assets/TEMP/036abc6f6b263337a4e295d8dfc1147d488bfd39?width=680"
@@ -417,7 +417,7 @@ export default function Index() {
               </div>
 
               {/* Template 3: Startup Hero */}
-              <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-sm border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden animate-slide-up" style={{ animationDelay: "0.2s" }}>
+              <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-sm border border-gray-200 shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 overflow-hidden animate-slide-up" style={{ animationDelay: "0.2s" }}>
                 <div className="w-full overflow-hidden rounded-t-sm">
                   <img
                     src="https://api.builder.io/api/v1/image/assets/TEMP/ab8faff0a41e9a58dc93059d2084b43ac3c54126?width=680"
