@@ -48,19 +48,19 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-8 flex-1 justify-center">
             <Link
               to="/templates"
-              className="text-zinc-700 text-base font-medium hover:text-indigo-500 transition-colors"
+              className={`text-base font-medium transition-colors ${isActive("/templates") ? "text-indigo-500 font-semibold" : "text-zinc-700 hover:text-indigo-500"}`}
             >
               Templates
             </Link>
             <Link
               to="/generator"
-              className="text-zinc-700 text-base font-medium hover:text-indigo-500 transition-colors"
+              className={`text-base font-medium transition-colors ${isActive("/generator") ? "text-indigo-500 font-semibold" : "text-zinc-700 hover:text-indigo-500"}`}
             >
               AI Generator
             </Link>
             <Link
               to="/about"
-              className="text-zinc-700 text-base font-medium hover:text-indigo-500 transition-colors"
+              className={`text-base font-medium transition-colors ${isActive("/about") ? "text-indigo-500 font-semibold" : "text-zinc-700 hover:text-indigo-500"}`}
             >
               About
             </Link>
