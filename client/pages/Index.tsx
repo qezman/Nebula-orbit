@@ -301,7 +301,7 @@ export default function Index() {
                   </svg>
                 </div>
                 <div className="flex flex-col gap-4 text-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 leading-tight tracking-tight">
+                  <h3 className="text-xl font-semibold text-gray-900 leading-tight tracking-tight">
                     Generate Pages Instantly
                   </h3>
                   <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
