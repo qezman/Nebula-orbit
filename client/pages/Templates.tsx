@@ -14,7 +14,7 @@ export default function Templates() {
   const templates = [
     {
       id: 1,
-      title: "SaaS Classic",
+      title: "Horizon Analytics",
       description:
         "A timeless SaaS template with hero, features, pricing, and testimonials sections. Light and dark mode support.",
       image: "/assets/Horizon.png",
@@ -23,7 +23,7 @@ export default function Templates() {
     },
     {
       id: 2,
-      title: "SaaS Minimal",
+      title: "Lynqson Minimal",
       description:
         "Ultra-clean minimalist design focusing on clarity and user experience.",
       image: "/assets/Lynqson.png",
@@ -41,7 +41,7 @@ export default function Templates() {
     },
     {
       id: 4,
-      title: "SaaS Classic",
+      title: "Analytics",
       description:
         "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
       image: "/assets/Alytics.png",
@@ -50,7 +50,7 @@ export default function Templates() {
     },
     {
       id: 5,
-      title: "SaaS Minimal",
+      title: "Saaasta",
       description:
         "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
       image: "/assets/Saaasta.png",
@@ -59,7 +59,7 @@ export default function Templates() {
     },
     {
       id: 6,
-      title: "Agency Clean",
+      title: "Fizens",
       description:
         "A timeless SaaS template with hero, features, pricing, and testimonials sections.",
       image: "/assets/Fizens.png",
@@ -203,7 +203,7 @@ export default function Templates() {
               {/* Template Info */}
               <div className="flex flex-col gap-4 px-4 pb-4 flex-1 justify-between">
                 <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 leading-tight tracking-tight">
+                  <h3 className="text-xl font-semibold text-gray-900 leading-tight tracking-tight">
                     {template.title}
                   </h3>
                   <p className="text-base text-gray-600 leading-relaxed mt-2">
