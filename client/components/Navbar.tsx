@@ -50,6 +50,16 @@ export default function Navbar() {
           {/* Center Navigation Links - Hidden on Mobile and Tablet */}
           <div className="hidden lg:flex items-center gap-8 flex-1 justify-center">
             <Link
+              href="/"
+              className={`text-base font-medium transition-colors ${
+                isActive("/")
+                  ? "text-indigo-500 font-semibold"
+                  : "text-zinc-700 hover:text-indigo-500"
+              }`}
+            >
+              Home
+            </Link>
+            <Link
               href="/templates"
               className={`text-base font-medium transition-colors ${
                 isActive("/templates")
@@ -141,6 +151,17 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="lg:hidden border-t border-zinc-200/50 py-4 px-4 bg-white/50 backdrop-blur-md">
             <div className="flex flex-col gap-3">
+              <Link
+                href="/"
+                className={`px-4 py-3 text-base font-medium rounded-lg transition-colors ${
+                  isActive("/")
+                    ? "text-indigo-500 bg-indigo-50 font-semibold"
+                    : "text-zinc-700 hover:bg-indigo-50 hover:text-indigo-500"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
               <Link
                 href="/templates"
                 className={`px-4 py-3 text-base font-medium rounded-lg transition-colors ${
