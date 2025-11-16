@@ -11,14 +11,14 @@ export default function CtaSection() {
       <div
         className={`container mx-auto px-4 sm:px-6 lg:px-16 transition-all duration-1000 ${ctaRef.isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
       >
-        <div className="flex flex-col items-center justify-center gap-6 max-w-4xl mx-auto text-center">
+        <div className="flex flex-col items-center justify-center gap-6 max-w-2xl mx-auto text-center">
           {/* Heading */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 w-full">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-gray-900">
               Start Building <span className="text-indigo-500">Beautiful</span>{" "}
               Pages Today
             </h2>
-            <p className="text-base sm:text-lg font-medium text-zinc-900 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
               Start with professionally designed templates and customize to your
               brand
             </p>
