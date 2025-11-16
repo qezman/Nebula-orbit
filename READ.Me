@@ -11,11 +11,15 @@ generation inspired by **Builder.io Fusion**.
 
 ## Live Demo
 
-xxxxxxxxxxxx
+https://builder-nebula-orbit.vercel.app/
 
 ## Demo Video
 
-xxxxxxxxxxx
+https://drive.google.com/drive/folders/1jTfbdkV91Hq5YQjMO-mHcrs2m2THknkt?usp=sharing
+
+## Builder.io (Preview Link)
+
+https://1e69072070084606b6d3f088a37947d4-main.projects.builder.my/
 
 ---
 
