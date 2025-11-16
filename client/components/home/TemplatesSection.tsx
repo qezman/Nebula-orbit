@@ -30,131 +30,137 @@ export default function TemplatesSection() {
           {/* Template Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 w-full">
             {/* Template 1: SaaS Pro */}
-            <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
-              <div className="w-full overflow-hidden rounded-t-lg">
+            <div className="flex flex-col bg-white rounded-sm border border-gray-200 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 overflow-hidden h-full">
+              <div className="w-full h-56 overflow-hidden rounded-t-sm">
                 <img
                   src="/assets/Horizon.png"
                   alt="SaaS Pro Template Preview"
-                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex flex-col gap-4 px-4 pb-4">
-                <h3 className="text-base lg:text-lg font-semibold text-gray-900 leading-tight tracking-tight">
+              <div className="flex flex-col gap-4 px-4 pb-4 flex-1 justify-between pt-4">
+                <h3 className="text-[20px] font-semibold text-gray-900 leading-tight tracking-tight">
                   SaaS Pro
                 </h3>
-                <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                <p className="text-base text-gray-600 leading-relaxed ">
                   Perfect for B2B SaaS products with conversion-focused sections
                 </p>
-                <Link
-                  href="https://authentic-designers-123357.framer.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors group"
-                >
-                  <span>View Template</span>
+                <div className="flex items-center gap-2">
+                  <Link
+                    href="https://authentic-designers-123357.framer.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors leading-5 tracking-tight"
+                  >
+                    View Template
+                  </Link>
                   <svg
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                    className="w-5 h-5"
                   >
                     <path
                       d="M4 12H20M20 12L14 18M20 12L14 6"
-                      stroke="currentColor"
+                      stroke="#4338CA"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
                   </svg>
-                </Link>
+                </div>
               </div>
             </div>
 
             {/* Template 2: Minimal Agency */}
-            <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
-              <div className="w-full overflow-hidden rounded-t-lg">
+            <div className="flex flex-col bg-white rounded-sm border border-gray-200 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 overflow-hidden h-full">
+              <div className="w-full h-56 overflow-hidden rounded-t-sm">
                 <img
                   src="/assets/Lynqson.png"
                   alt="Minimal Agency Template Preview"
-                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex flex-col gap-4 px-4 pb-4">
-                <h3 className="text-base lg:text-lg font-semibold text-gray-900 leading-tight tracking-tight">
+              <div className="flex flex-col pt-4 gap-4 px-4 pb-4 flex-1 justify-between">
+                <h3 className="text-[20px] font-semibold text-gray-900 leading-tight tracking-tight">
                   Minimal Agency
                 </h3>
-                <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                <p className="text-base text-gray-600 leading-relaxed">
                   Elegant design for creative agencies and design studios
                 </p>
-                <Link
-                  href="https://internal-three-386561.framer.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors group"
-                >
-                  <span>View Template</span>
+                <div className="flex items-center gap-2">
+                  <Link
+                    href="https://internal-three-386561.framer.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors leading-5 tracking-tight"
+                  >
+                    View Template
+                  </Link>
                   <svg
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                    className="w-5 h-5"
                   >
                     <path
                       d="M4 12H20M20 12L14 18M20 12L14 6"
-                      stroke="currentColor"
+                      stroke="#4338CA"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
                   </svg>
-                </Link>
+                </div>
               </div>
             </div>
 
             {/* Template 3: Startup Hero */}
-            <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
-              <div className="w-full overflow-hidden rounded-t-lg">
+            <div className="flex flex-col bg-white rounded-sm border border-gray-200 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 overflow-hidden h-full">
+              <div className="w-full h-56 overflow-hidden rounded-t-sm">
                 <img
                   src="/assets/Fizens.png"
                   alt="Startup Hero Template Preview"
-                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex flex-col gap-4 px-4 pb-4">
+              <div className="flex flex-col gap-4 px-4 pb-4 flex-1 justify-between pt-4">
                 <h3 className="text-base lg:text-lg font-semibold text-gray-900 leading-tight tracking-tight">
                   Startup Hero
                 </h3>
-                <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                <p className="text-[20px] text-gray-600 leading-relaxed">
                   Bold and energetic design for tech startups and innovations
                 </p>
-                <Link
-                  href="https://contextual-use-196378.framer.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors group"
-                >
-                  <span>View Template</span>
+                <div className="flex items-center gap-2">
+                  <Link
+                    href="https://contextual-use-196378.framer.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm font-semibold text-indigo-700 hover:text-indigo-800 transition-colors leading-5 tracking-tight"
+                  >
+                    View Template
+                  </Link>
                   <svg
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                    className="w-5 h-5"
                   >
                     <path
                       d="M4 12H20M20 12L14 18M20 12L14 6"
-                      stroke="currentColor"
+                      stroke="#4338CA"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
                   </svg>
-                </Link>
+                </div>
               </div>
             </div>
           </div>
