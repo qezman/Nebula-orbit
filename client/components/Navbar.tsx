@@ -20,7 +20,7 @@ export default function Navbar() {
             className="flex items-center gap-3 hover:opacity-80 transition-opacity flex-shrink-0"
             onClick={() => setIsMenuOpen(false)}
           >
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
+            {/* <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
               <svg
                 width="16"
                 height="14"
@@ -41,7 +41,7 @@ export default function Navbar() {
                   </clipPath>
                 </defs>
               </svg>
-            </div>
+            </div> */}
             <span className="text-indigo-500 text-2xl sm:text-3xl font-semibold tracking-tight">
               Nebula
             </span>
